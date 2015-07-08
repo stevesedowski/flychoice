@@ -1,0 +1,86 @@
+
+input {
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 0px 1px 0px 3px;
+    background: rgba(255,255,255,0.23);
+}
+
+/*to center a div, do the following, plus +++ have the container div have the same parameters too...*/
+.flightChoice {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.airports {
+  width: 220px;
+  height: 40px;
+  letter-spacing: 0.044em;
+}
+
+.dates {
+  width: 140px;
+  height: 40px;
+}
+
+.search {
+  width: 80px;
+  height: 40px;
+  background: rgba(255, 51, 0, 0.7);
+  border: 1px solid rgba(255, 51, 0, 0.71);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.1em;
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  letter-spacing: 0.033em;
+}
+
+.search:hover {
+  background: rgba(255, 51, 0, 0.87);
+  border: 1px solid rgba(255, 51, 0, 0.87);
+  color: #FFFFFE;  
+}
+
+.input {
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  font-size: 1.1em;
+}
+
+.input:hover {
+  /*background: #F4A460;*/
+  background: rgba(255,255,255,0.37);
+  color: #FFFFFE;
+}
+
+.spacer {
+  width: 10px;
+  height: 40px;
+}
+
+
+
+
+
+  
+  

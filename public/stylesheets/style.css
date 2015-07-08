@@ -1,0 +1,43 @@
+body {
+  padding: 2px;
+  font-family: Avenir, "Trebuchet MS","Century Gothic", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background-image: url('../images/airwing.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.page {
+	/*display: inline-block;*/
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 220px;
+}
+
+.main-title {
+	font-size: 5em;
+	color: #ffffff;
+	font-weight:400;
+	margin: 1px 2px 1px 2px;
+}
+
+.sub-title {
+	font-size: 1em;
+	color: #ffffff;
+	font-weight: 400;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
