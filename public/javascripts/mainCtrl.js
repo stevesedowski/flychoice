@@ -32,18 +32,29 @@
 			$scope.error = error;
 		}
 
-		apiCall.getCityInfo().then(onSuccess, onError);
-		apiCall.getThemeInfo().then(onSuccessTheme, onErrorTheme);
+		 // apiCall.getCityInfo().then(onSuccess, onError);
+		 // apiCall.getThemeInfo().then(onSuccessTheme, onErrorTheme);
 		
 		// form Data collected here ------------------------------------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-		// then service is called to pass form info to the API
+		
 		$scope.submit = function() {
 			var flightInfo = {};
-			flightInfo.origin = $scope.origin;
-			flightInfo.destination = $scope.destination;
+
+			// collect input form informaiton into an object
+			var origin = $('#originAirport');
+			var destination = $('#destinationAirport');
+
+			// extract just the airport code from the input information
+			var originAirport  = origin.val().substring(0,3);
+			var destinationAirport = destination.val().substring(0,3);
+
+			// populate flightInfo object
+			flightInfo.destination = destinationAirport;
 			flightInfo.departuredate = $scope.departuredate;
 			flightInfo.returndate = $scope.returndate;
+			flightInfo.origin = originAirport;
 
+			// then service is called to pass form info to the API
 			apiCall.getFlights(flightInfo).then(onSuccessFlights, onErrorFlights);
 		}
 

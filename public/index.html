@@ -2,8 +2,11 @@
 <html ng-app="app">
 <head>
 	<title>FlyChoice: Sabre Dev Studio REST APIs</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/datepicker.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -17,10 +20,10 @@
 			<span class="sub-title">Choose a Place. Choices Abound.</span>
 		</div>
 		<form ng-submit="submit()">
-			<input class="input airports" id="autocomplete" type="search"  ng-model="origin" name="origin" />
-			<input class="input airports" id="" type="search" ng-model="destination" name="destination" />
-			<input class="input dates" id="" type="search" ng-model="departuredate" name="departuredate" />
-			<input class="input dates" id="" type="search" ng-model="returndate" name="returndate" />
+			<input class="input airports" id="originAirport" type="search"  ng-model="origin" name="origin" />
+			<input class="input airports" id="destinationAirport" type="search" ng-model="destination" name="destination" />
+			<input class="input dates" id="departure" type="search" ng-model="departuredate" name="departuredate" />
+			<input class="input dates" id="return" type="search" ng-model="returndate" name="returndate" />
 			<button class="search">Search</button>
 		</form>
 	</div>
@@ -182,6 +185,8 @@
 <script type="text/javascript" src="javascripts/apiService.js"></script>
 <script type="text/javascript" src="javascripts/jquery.autocomplete.js"></script>
 <script type="text/javascript" src="javascripts/autocomplete.js"></script>
+<script type="text/javascript" src="javascripts/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="javascripts/selectDates.js"></script>
 
 
 

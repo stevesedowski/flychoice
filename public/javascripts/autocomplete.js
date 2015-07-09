@@ -19,6 +19,29 @@
     		  console.log(suggestion.airport.CITY_NAME);
     		}
     	});
+
+      // autocomplete for the origin airport
+      $("#originAirport").autocomplete({
+        lookup: data,
+        minChars: 2,
+        lookupLimit: 5,
+        onSelect: function(suggestion) {
+          console.log(suggestion.value);
+          console.log(suggestion.airport.CITY_NAME);
+        }
+
+        // autocomplete for the destination airport
+      });
+      $("#destinationAirport").autocomplete({
+        lookup: data,
+        minChars: 2,
+        lookupLimit: 5,
+        onSelect: function(suggestion) {
+          console.log(suggestion.value);
+          console.log(suggestion.airport.CITY_NAME);
+        }
+      });
+      
     })
     .fail(function() {
       alert( "error" );
