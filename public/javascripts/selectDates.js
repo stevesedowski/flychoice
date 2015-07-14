@@ -1,10 +1,9 @@
 $(function(){
 
-	var date = new Date();
-
+// use the "dist" folder for the download of the datepicker!!
 	$('#departure').datepicker({
+		startDate: 'today',
 	    format: 'yyyy-mm-dd',
-	    startDate: Date.now(),
 	    endDate: '+6m',
 	    orientation: 'top left',
 	    todayHighlight: true
@@ -12,7 +11,7 @@ $(function(){
 	$('#return').datepicker({
 	    format: 'yyyy-mm-dd',
 	    startDate: 'today',
-	    endDate: '+90d',
+	    endDate: '+6m',
 	    orientation: 'top left',
 	    todayHighlight: true
 	});    

@@ -40,14 +40,6 @@
         "LONGITUDE": "9.8499999999999996"
     },
     {
-        "VENDOR_CODE": "AAM",
-        "POI_NAME": "Mala Mala Airport",
-        "CITY_NAME": "Mala Mala",
-        "COUNTRY_CODE": "ZA",
-        "LATITUDE": "-24.8",
-        "LONGITUDE": "31.533333333333335"
-    },
-    {
         "VENDOR_CODE": "AAN",
         "POI_NAME": "Al Ain",
         "CITY_NAME": "Al Ain",
@@ -969,15 +961,6 @@
         "LONGITUDE": "16.535"
     },
     {
-        "VENDOR_CODE": "ALM",
-        "POI_NAME": "Alamagordo/Holloman AFB",
-        "CITY_NAME": "Alamogordo",
-        "STATE_CODE": "NM",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "32.839722000000002",
-        "LONGITUDE": "-105.98999999999999"
-    },
-    {
         "VENDOR_CODE": "ALO",
         "POI_NAME": "Waterloo",
         "CITY_NAME": "Waterloo",
@@ -985,32 +968,6 @@
         "COUNTRY_CODE": "US",
         "LATITUDE": "42.556666999999997",
         "LONGITUDE": "-92.400000000000006"
-    },
-    {
-        "VENDOR_CODE": "ALP",
-        "POI_NAME": "Aleppo",
-        "CITY_NAME": "Aleppo",
-        "COUNTRY_CODE": "SY",
-        "LATITUDE": "36.179721999999998",
-        "LONGITUDE": "37.226111000000003"
-    },
-    {
-        "VENDOR_CODE": "ALS",
-        "POI_NAME": "Alamosa",
-        "CITY_NAME": "Alamosa",
-        "STATE_CODE": "CO",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "37.435833000000002",
-        "LONGITUDE": "-105.865278"
-    },
-    {
-        "VENDOR_CODE": "ALW",
-        "POI_NAME": "Walla Walla",
-        "CITY_NAME": "Walla Walla",
-        "STATE_CODE": "WA",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "46.094444000000003",
-        "LONGITUDE": "-118.28694400000001"
     },
     {
         "VENDOR_CODE": "ALY",
@@ -1021,15 +978,6 @@
         "LONGITUDE": "29.945833"
     },
     {
-        "VENDOR_CODE": "ALZ",
-        "POI_NAME": "Alitak",
-        "CITY_NAME": "Alitak",
-        "STATE_CODE": "AK",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "56.895833000000003",
-        "LONGITUDE": "-154.245833"
-    },
-    {
         "VENDOR_CODE": "AMA",
         "POI_NAME": "Amarillo",
         "CITY_NAME": "Amarillo",
@@ -1037,30 +985,6 @@
         "COUNTRY_CODE": "US",
         "LATITUDE": "35.221111000000001",
         "LONGITUDE": "-101.70999999999999"
-    },
-    {
-        "VENDOR_CODE": "AMD",
-        "POI_NAME": "Ahmedabad",
-        "CITY_NAME": "Ahmedabad",
-        "COUNTRY_CODE": "IN",
-        "LATITUDE": "23.070556",
-        "LONGITUDE": "72.62694399999998"
-    },
-    {
-        "VENDOR_CODE": "AMH",
-        "POI_NAME": "Arba Mintch",
-        "CITY_NAME": "Arba Minch",
-        "COUNTRY_CODE": "ET",
-        "LATITUDE": "6.036111",
-        "LONGITUDE": "37.576943999999997"
-    },
-    {
-        "VENDOR_CODE": "AMI",
-        "POI_NAME": "Mataram",
-        "CITY_NAME": "Mataram",
-        "COUNTRY_CODE": "ID",
-        "LATITUDE": "-8.5600000000000005",
-        "LONGITUDE": "116.09694399999999"
     },
     {
         "VENDOR_CODE": "AMM",
@@ -1085,22 +1009,6 @@
         "COUNTRY_CODE": "NL",
         "LATITUDE": "52.308056000000001",
         "LONGITUDE": "4.7641669999999996"
-    },
-    {
-        "VENDOR_CODE": "AMV",
-        "POI_NAME": "Amderma",
-        "CITY_NAME": "Amderma",
-        "COUNTRY_CODE": "RU",
-        "LATITUDE": "69.833332999999996",
-        "LONGITUDE": "61.583333000000003"
-    },
-    {
-        "VENDOR_CODE": "AMY",
-        "POI_NAME": "Ambatomainty",
-        "CITY_NAME": "Ambatomainty",
-        "COUNTRY_CODE": "MG",
-        "LATITUDE": "-17.683333000000001",
-        "LONGITUDE": "45.666666999999997"
     },
     {
         "VENDOR_CODE": "ANB",
@@ -1129,45 +1037,12 @@
         "LONGITUDE": "-0.312222"
     },
     {
-        "VENDOR_CODE": "ANF",
-        "POI_NAME": "Antofagasta",
-        "CITY_NAME": "Antofagasta",
-        "COUNTRY_CODE": "CL",
-        "LATITUDE": "-23.440000000000001",
-        "LONGITUDE": "-70.441944000000021"
-    },
-    {
         "VENDOR_CODE": "ANG",
         "POI_NAME": "Angouleme",
         "CITY_NAME": "Angouleme",
         "COUNTRY_CODE": "FR",
         "LATITUDE": "45.730556",
         "LONGITUDE": "0.220556"
-    },
-    {
-        "VENDOR_CODE": "ANI",
-        "POI_NAME": "Aniak",
-        "CITY_NAME": "Aniak",
-        "STATE_CODE": "AK",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "61.580832999999998",
-        "LONGITUDE": "-159.53527800000001"
-    },
-    {
-        "VENDOR_CODE": "ANK",
-        "POI_NAME": "Ankara",
-        "CITY_NAME": "Ankara",
-        "COUNTRY_CODE": "TR",
-        "LATITUDE": "39.951667",
-        "LONGITUDE": "32.688056000000003"
-    },
-    {
-        "VENDOR_CODE": "ANM",
-        "POI_NAME": "Antalaha",
-        "CITY_NAME": "Antalaha",
-        "COUNTRY_CODE": "MG",
-        "LATITUDE": "-15",
-        "LONGITUDE": "50.333333000000003"
     },
     {
         "VENDOR_CODE": "ANR",
@@ -1178,29 +1053,12 @@
         "LONGITUDE": "4.46"
     },
     {
-        "VENDOR_CODE": "ANS",
-        "POI_NAME": "Andahuaylas",
-        "CITY_NAME": "Andahuaylas",
-        "COUNTRY_CODE": "PE",
-        "LATITUDE": "-13.716666999999999",
-        "LONGITUDE": "-73.355833000000004"
-    },
-    {
         "VENDOR_CODE": "ANU",
         "POI_NAME": "Antigua, British West Indies",
         "CITY_NAME": "Antigua",
         "COUNTRY_CODE": "AG",
         "LATITUDE": "17.141110999999999",
         "LONGITUDE": "-61.785556000000007"
-    },
-    {
-        "VENDOR_CODE": "ANV",
-        "POI_NAME": "Anvik",
-        "CITY_NAME": "Anvik",
-        "STATE_CODE": "AK",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "62.647778000000002",
-        "LONGITUDE": "-160.18888899999999"
     },
     {
         "VENDOR_CODE": "ANX",
@@ -1225,39 +1083,6 @@
         "COUNTRY_CODE": "IT",
         "LATITUDE": "43.615278000000004",
         "LONGITUDE": "13.362500000000001"
-    },
-    {
-        "VENDOR_CODE": "AOJ",
-        "POI_NAME": "Aomori",
-        "CITY_NAME": "Aomori",
-        "COUNTRY_CODE": "JP",
-        "LATITUDE": "40.730556",
-        "LONGITUDE": "140.69222199999999"
-    },
-    {
-        "VENDOR_CODE": "AOK",
-        "POI_NAME": "Karpathos",
-        "CITY_NAME": "Karpathos",
-        "COUNTRY_CODE": "GR",
-        "LATITUDE": "35.42388900000001",
-        "LONGITUDE": "27.147221999999999"
-    },
-    {
-        "VENDOR_CODE": "AOO",
-        "POI_NAME": "Altoona",
-        "CITY_NAME": "Altoona",
-        "STATE_CODE": "PA",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "40.296111000000003",
-        "LONGITUDE": "-78.320278000000002"
-    },
-    {
-        "VENDOR_CODE": "AOR",
-        "POI_NAME": "Alor Setar",
-        "CITY_NAME": "Alor Setar",
-        "COUNTRY_CODE": "MY",
-        "LATITUDE": "6.1947219999999996",
-        "LONGITUDE": "100.403333"
     },
     {
         "VENDOR_CODE": "AOS",
@@ -1292,80 +1117,6 @@
         "COUNTRY_CODE": "MZ",
         "LATITUDE": "-15.1",
         "LONGITUDE": "39.283332999999999"
-    },
-    {
-        "VENDOR_CODE": "APN",
-        "POI_NAME": "Alpena",
-        "CITY_NAME": "Alpena",
-        "STATE_CODE": "MI",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "45.079999999999998",
-        "LONGITUDE": "-83.559721999999979"
-    },
-    {
-        "VENDOR_CODE": "APO",
-        "POI_NAME": "Apartado",
-        "CITY_NAME": "Apartado",
-        "COUNTRY_CODE": "CO",
-        "LATITUDE": "7.0333329999999998",
-        "LONGITUDE": "-77.200000000000003"
-    },
-    {
-        "VENDOR_CODE": "APR",
-        "POI_NAME": "Aparri",
-        "CITY_NAME": "April River",
-        "COUNTRY_CODE": "PH",
-        "LATITUDE": "18.357222",
-        "LONGITUDE": "121.65138899999999"
-    },
-    {
-        "VENDOR_CODE": "APW",
-        "POI_NAME": "Apia, Western",
-        "CITY_NAME": "Apia",
-        "COUNTRY_CODE": "WS",
-        "LATITUDE": "-13.821667",
-        "LONGITUDE": "-171.99166700000001"
-    },
-    {
-        "VENDOR_CODE": "AQA",
-        "POI_NAME": "Araraquara",
-        "CITY_NAME": "Araraquara",
-        "STATE_CODE": "SP",
-        "COUNTRY_CODE": "BR",
-        "LATITUDE": "-21.803889000000002",
-        "LONGITUDE": "-48.139721999999999"
-    },
-    {
-        "VENDOR_CODE": "AQG",
-        "POI_NAME": "Anqing",
-        "CITY_NAME": "Anqing",
-        "COUNTRY_CODE": "CN",
-        "LATITUDE": "30.5",
-        "LONGITUDE": "117"
-    },
-    {
-        "VENDOR_CODE": "AQI",
-        "POI_NAME": "Qaisumah",
-        "CITY_NAME": "Qaisumah",
-        "COUNTRY_CODE": "SA",
-        "LATITUDE": "28.334721999999999",
-        "LONGITUDE": "46.124443999999997"
-    },
-    {
-        "VENDOR_CODE": "AQJ",
-        "POI_NAME": "Aqaba",
-        "CITY_NAME": "Aqaba",
-        "COUNTRY_CODE": "JO",
-        "LATITUDE": "29.612500000000001",
-        "LONGITUDE": "35.019444"
-    },
-    {
-        "VENDOR_CODE": "AQP",
-        "POI_NAME": "Arequipa",
-        "CITY_NAME": "Arequipa",
-        "COUNTRY_CODE": "PE",
-        "LATITUDE": "-16.337222000000001",
-        "LONGITUDE": "-71.569166999999979"
     },
     {
         "VENDOR_CODE": "ARC",
@@ -1418,14 +1169,6 @@
         "LONGITUDE": "17.921944"
     },
     {
-        "VENDOR_CODE": "ARP",
-        "POI_NAME": "Aragip",
-        "CITY_NAME": "Aragip",
-        "COUNTRY_CODE": "PG",
-        "LATITUDE": "-6.4500000000000002",
-        "LONGITUDE": "141.05000000000001"
-    },
-    {
         "VENDOR_CODE": "ART",
         "POI_NAME": "Watertown",
         "CITY_NAME": "Watertown",
@@ -1435,56 +1178,6 @@
         "LONGITUDE": "-76.021944000000005"
     },
     {
-        "VENDOR_CODE": "ARU",
-        "POI_NAME": "Aracatuba",
-        "CITY_NAME": "Aracatuba",
-        "STATE_CODE": "SP",
-        "COUNTRY_CODE": "BR",
-        "LATITUDE": "-21.143611",
-        "LONGITUDE": "-50.425832999999997"
-    },
-    {
-        "VENDOR_CODE": "ARV",
-        "POI_NAME": "Minocqua",
-        "CITY_NAME": "Minocqua",
-        "STATE_CODE": "WI",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "45.929721999999998",
-        "LONGITUDE": "-89.726944000000003"
-    },
-    {
-        "VENDOR_CODE": "ARW",
-        "POI_NAME": "Arad",
-        "CITY_NAME": "Arad",
-        "COUNTRY_CODE": "RO",
-        "LATITUDE": "46.176667000000002",
-        "LONGITUDE": "21.263611000000001"
-    },
-    {
-        "VENDOR_CODE": "ASA",
-        "POI_NAME": "Assab",
-        "CITY_NAME": "Assab",
-        "COUNTRY_CODE": "ER",
-        "LATITUDE": "13.07",
-        "LONGITUDE": "42.638333000000003"
-    },
-    {
-        "VENDOR_CODE": "ASB",
-        "POI_NAME": "Ashkhabad",
-        "CITY_NAME": "Ashgabat",
-        "COUNTRY_CODE": "TM",
-        "LATITUDE": "37.981667000000002",
-        "LONGITUDE": "58.360832999999992"
-    },
-    {
-        "VENDOR_CODE": "ASD",
-        "POI_NAME": "Andros Town",
-        "CITY_NAME": "Andros Town",
-        "COUNTRY_CODE": "BS",
-        "LATITUDE": "24.697778",
-        "LONGITUDE": "-77.796110999999982"
-    },
-    {
         "VENDOR_CODE": "ASE",
         "POI_NAME": "Aspen",
         "CITY_NAME": "Aspen",
@@ -1492,111 +1185,6 @@
         "COUNTRY_CODE": "US",
         "LATITUDE": "39.223056",
         "LONGITUDE": "-106.868056"
-    },
-    {
-        "VENDOR_CODE": "ASF",
-        "POI_NAME": "Narimanovo/Astrakhan",
-        "CITY_NAME": "Astrakhan",
-        "COUNTRY_CODE": "RU",
-        "LATITUDE": "46.288333000000002",
-        "LONGITUDE": "48.008333"
-    },
-    {
-        "VENDOR_CODE": "ASI",
-        "POI_NAME": "Georgetown",
-        "CITY_NAME": "Ascension Island",
-        "COUNTRY_CODE": "SH",
-        "LATITUDE": "-16.016667000000002",
-        "LONGITUDE": "-5.266667"
-    },
-    {
-        "VENDOR_CODE": "ASJ",
-        "POI_NAME": "Amami O Shima",
-        "CITY_NAME": "Amami",
-        "COUNTRY_CODE": "JP",
-        "LATITUDE": "28.416944000000001",
-        "LONGITUDE": "129.69749999999999"
-    },
-    {
-        "VENDOR_CODE": "ASM",
-        "POI_NAME": "Asmara",
-        "CITY_NAME": "Asmara",
-        "COUNTRY_CODE": "ER",
-        "LATITUDE": "15.300000000000001",
-        "LONGITUDE": "38.916666999999997"
-    },
-    {
-        "VENDOR_CODE": "ASO",
-        "POI_NAME": "Asosa",
-        "CITY_NAME": "Asosa",
-        "COUNTRY_CODE": "ET",
-        "LATITUDE": "10.047222",
-        "LONGITUDE": "34.536667000000001"
-    },
-    {
-        "VENDOR_CODE": "ASP",
-        "POI_NAME": "Alice Springs, NT",
-        "CITY_NAME": "Alice Springs",
-        "STATE_CODE": "NT",
-        "COUNTRY_CODE": "AU",
-        "LATITUDE": "-23.808333000000001",
-        "LONGITUDE": "133.90083300000001"
-    },
-    {
-        "VENDOR_CODE": "ASR",
-        "POI_NAME": "Kayseri",
-        "CITY_NAME": "Kayseri",
-        "COUNTRY_CODE": "TR",
-        "LATITUDE": "38.776389000000002",
-        "LONGITUDE": "35.498888999999998"
-    },
-    {
-        "VENDOR_CODE": "ASU",
-        "POI_NAME": "Asuncion",
-        "CITY_NAME": "Asuncion",
-        "COUNTRY_CODE": "PY",
-        "LATITUDE": "-25.239999999999998",
-        "LONGITUDE": "-57.520000000000003"
-    },
-    {
-        "VENDOR_CODE": "ASV",
-        "POI_NAME": "Ambosell",
-        "CITY_NAME": "Amboseli",
-        "COUNTRY_CODE": "TZ",
-        "LATITUDE": "-2.6333329999999999",
-        "LONGITUDE": "37.25"
-    },
-    {
-        "VENDOR_CODE": "ASW",
-        "POI_NAME": "Aswan, Arab Republic Of",
-        "CITY_NAME": "Aswan",
-        "COUNTRY_CODE": "EG",
-        "LATITUDE": "23.966667000000001",
-        "LONGITUDE": "32.799999999999997"
-    },
-    {
-        "VENDOR_CODE": "ATB",
-        "POI_NAME": "Atbara",
-        "CITY_NAME": "Atbara",
-        "COUNTRY_CODE": "SD",
-        "LATITUDE": "17.716667000000001",
-        "LONGITUDE": "34.016666999999998"
-    },
-    {
-        "VENDOR_CODE": "ATC",
-        "POI_NAME": "Arthur s Town",
-        "CITY_NAME": "Arthur's Town",
-        "COUNTRY_CODE": "BS",
-        "LATITUDE": "24.628610999999999",
-        "LONGITUDE": "-75.671389000000005"
-    },
-    {
-        "VENDOR_CODE": "ATD",
-        "POI_NAME": "Auki Field",
-        "CITY_NAME": "Atoifi",
-        "COUNTRY_CODE": "SB",
-        "LATITUDE": "-8.8666669999999979",
-        "LONGITUDE": "161.033333"
     },
     {
         "VENDOR_CODE": "ATH",
@@ -1631,14 +1219,6 @@
         "COUNTRY_CODE": "PG",
         "LATITUDE": "-3.671389",
         "LONGITUDE": "152.43638899999999"
-    },
-    {
-        "VENDOR_CODE": "ATP",
-        "POI_NAME": "Aitape",
-        "CITY_NAME": "Aitape",
-        "COUNTRY_CODE": "PG",
-        "LATITUDE": "-3.1333329999999999",
-        "LONGITUDE": "142.34999999999999"
     },
     {
         "VENDOR_CODE": "ATQ",
@@ -1684,14 +1264,6 @@
         "LONGITUDE": "-97.154167000000001"
     },
     {
-        "VENDOR_CODE": "ATZ",
-        "POI_NAME": "Asyut, Arab Rep. of",
-        "CITY_NAME": "Asyut",
-        "COUNTRY_CODE": "EG",
-        "LATITUDE": "27.046389000000001",
-        "LONGITUDE": "31.011944"
-    },
-    {
         "VENDOR_CODE": "AUA",
         "POI_NAME": "Aruba",
         "CITY_NAME": "Aruba",
@@ -1732,31 +1304,6 @@
         "COUNTRY_CODE": "US",
         "LATITUDE": "62.689166999999998",
         "LONGITUDE": "-164.61083300000001"
-    },
-    {
-        "VENDOR_CODE": "AUL",
-        "POI_NAME": "Aur Atoll",
-        "CITY_NAME": "Aur Island",
-        "STATE_CODE": "PC",
-        "COUNTRY_CODE": "MH",
-        "LATITUDE": "8.266667",
-        "LONGITUDE": "171.033333"
-    },
-    {
-        "VENDOR_CODE": "AUP",
-        "POI_NAME": "Aguan",
-        "CITY_NAME": "Agaun",
-        "COUNTRY_CODE": "PG",
-        "LATITUDE": "-9.9166670000000003",
-        "LONGITUDE": "149.33333300000001"
-    },
-    {
-        "VENDOR_CODE": "AUQ",
-        "POI_NAME": "Atuona",
-        "CITY_NAME": "Hiva Oa",
-        "COUNTRY_CODE": "PF",
-        "LATITUDE": "-9.766667",
-        "LONGITUDE": "-139.01666700000001"
     },
     {
         "VENDOR_CODE": "AUR",
@@ -2294,15 +1841,6 @@
         "LONGITUDE": "114.753889"
     },
     {
-        "VENDOR_CODE": "BDL",
-        "POI_NAME": "Hartford",
-        "CITY_NAME": "Hartford",
-        "STATE_CODE": "CT",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "41.938611000000002",
-        "LONGITUDE": "-72.683610999999999"
-    },
-    {
         "VENDOR_CODE": "BDO",
         "POI_NAME": "Bandung",
         "CITY_NAME": "Bandung",
@@ -2360,54 +1898,12 @@
         "LONGITUDE": "-7.365278"
     },
     {
-        "VENDOR_CODE": "BED",
-        "POI_NAME": "Bedford",
-        "CITY_NAME": "Bedford/Hanscom",
-        "STATE_CODE": "MA",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "42.469721999999997",
-        "LONGITUDE": "-71.289444000000003"
-    },
-    {
         "VENDOR_CODE": "BEF",
         "POI_NAME": "Bluefields",
         "CITY_NAME": "Bluefields",
         "COUNTRY_CODE": "NI",
         "LATITUDE": "11.996943999999999",
         "LONGITUDE": "-83.768611000000007"
-    },
-    {
-        "VENDOR_CODE": "BEG",
-        "POI_NAME": "Belgrade, Serbia",
-        "CITY_NAME": "Belgrade",
-        "COUNTRY_CODE": "YU",
-        "LATITUDE": "44.819443999999997",
-        "LONGITUDE": "20.3125"
-    },
-    {
-        "VENDOR_CODE": "BEH",
-        "POI_NAME": "Benton Harbor/St. Joseph",
-        "CITY_NAME": "Benton Harbor",
-        "STATE_CODE": "MI",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "42.128332999999998",
-        "LONGITUDE": "-86.428332999999981"
-    },
-    {
-        "VENDOR_CODE": "BEI",
-        "POI_NAME": "Beica",
-        "CITY_NAME": "Beica",
-        "COUNTRY_CODE": "ET",
-        "LATITUDE": "9.391667",
-        "LONGITUDE": "34.533332999999999"
-    },
-    {
-        "VENDOR_CODE": "BEJ",
-        "POI_NAME": "Berau Bay",
-        "CITY_NAME": "Tanjung Redeb",
-        "COUNTRY_CODE": "ID",
-        "LATITUDE": "-2.4166669999999999",
-        "LONGITUDE": "133"
     },
     {
         "VENDOR_CODE": "BEL",
@@ -2417,14 +1913,6 @@
         "COUNTRY_CODE": "BR",
         "LATITUDE": "-1.384444",
         "LONGITUDE": "-48.478332999999999"
-    },
-    {
-        "VENDOR_CODE": "BEN",
-        "POI_NAME": "Benghazi",
-        "CITY_NAME": "Benghazi",
-        "COUNTRY_CODE": "LY",
-        "LATITUDE": "32.097499999999997",
-        "LONGITUDE": "20.270833"
     },
     {
         "VENDOR_CODE": "BEO",
@@ -2484,15 +1972,6 @@
         "COUNTRY_CODE": "LB",
         "LATITUDE": "33.820556000000003",
         "LONGITUDE": "35.489167000000002"
-    },
-    {
-        "VENDOR_CODE": "BFD",
-        "POI_NAME": "Bradford",
-        "CITY_NAME": "Bradford",
-        "STATE_CODE": "PA",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "41.802778000000004",
-        "LONGITUDE": "-78.640277999999981"
     },
     {
         "VENDOR_CODE": "BFE",
@@ -2919,36 +2398,12 @@
         "LONGITUDE": "27.284721999999999"
     },
     {
-        "VENDOR_CODE": "BJA",
-        "POI_NAME": "Bordj Bou Arreridj",
-        "CITY_NAME": "Bejaia",
-        "COUNTRY_CODE": "DZ",
-        "LATITUDE": "36.716667000000001",
-        "LONGITUDE": "5.0666669999999998"
-    },
-    {
-        "VENDOR_CODE": "BJB",
-        "POI_NAME": "Bojnord",
-        "CITY_NAME": "Bojnurd",
-        "COUNTRY_CODE": "IR",
-        "LATITUDE": "37.5",
-        "LONGITUDE": "57.333333000000003"
-    },
-    {
         "VENDOR_CODE": "BJE",
         "POI_NAME": "Baleela Airport",
         "CITY_NAME": "Baleela",
         "COUNTRY_CODE": "SD",
         "LATITUDE": "11.209166666666667",
         "LONGITUDE": "28.533333333333335"
-    },
-    {
-        "VENDOR_CODE": "BJF",
-        "POI_NAME": "Batsfjord",
-        "CITY_NAME": "Batsfjord",
-        "COUNTRY_CODE": "NO",
-        "LATITUDE": "70.602778000000001",
-        "LONGITUDE": "29.699722000000001"
     },
     {
         "VENDOR_CODE": "BJI",
@@ -2998,14 +2453,6 @@
         "COUNTRY_CODE": "LK",
         "LATITUDE": "6.483333333333333",
         "LONGITUDE": "79.98333333333333"
-    },
-    {
-        "VENDOR_CODE": "BJV",
-        "POI_NAME": "Milas",
-        "CITY_NAME": "Bodrum",
-        "COUNTRY_CODE": "TR",
-        "LATITUDE": "37.248055999999998",
-        "LONGITUDE": "27.681944000000001"
     },
     {
         "VENDOR_CODE": "BJX",
@@ -3324,30 +2771,6 @@
         "LONGITUDE": "118.733333"
     },
     {
-        "VENDOR_CODE": "BMV",
-        "POI_NAME": "Ban Me Thuot",
-        "CITY_NAME": "Buon Ma Thuot",
-        "COUNTRY_CODE": "VN",
-        "LATITUDE": "12.666667",
-        "LONGITUDE": "108.09999999999999"
-    },
-    {
-        "VENDOR_CODE": "BMW",
-        "POI_NAME": "Brdj Bdji Mokhtar",
-        "CITY_NAME": "Bordj Badji Mokhtar",
-        "COUNTRY_CODE": "ML",
-        "LATITUDE": "21.133333",
-        "LONGITUDE": "1.066667"
-    },
-    {
-        "VENDOR_CODE": "BMY",
-        "POI_NAME": "Belep",
-        "CITY_NAME": "Ile Art",
-        "COUNTRY_CODE": "NC",
-        "LATITUDE": "-19.75",
-        "LONGITUDE": "163.66666699999999"
-    },
-    {
         "VENDOR_CODE": "BNA",
         "POI_NAME": "Nashville",
         "CITY_NAME": "Nashville",
@@ -3547,14 +2970,6 @@
         "LONGITUDE": "136.30000000000001"
     },
     {
-        "VENDOR_CODE": "BOY",
-        "POI_NAME": "Bobo Dioulasso",
-        "CITY_NAME": "Bobo Dioulasso",
-        "COUNTRY_CODE": "BF",
-        "LATITUDE": "11.167222000000001",
-        "LONGITUDE": "-4.3200000000000003"
-    },
-    {
         "VENDOR_CODE": "BPF",
         "POI_NAME": "Batuna Airport",
         "CITY_NAME": "Batuna",
@@ -3663,15 +3078,6 @@
         "LONGITUDE": "-61.133332999999993"
     },
     {
-        "VENDOR_CODE": "BRC",
-        "POI_NAME": "San Carlos De Bariloche",
-        "CITY_NAME": "San Carlos de Bariloche",
-        "STATE_CODE": "RN",
-        "COUNTRY_CODE": "AR",
-        "LATITUDE": "-41.149999999999999",
-        "LONGITUDE": "-71.166667000000004"
-    },
-    {
         "VENDOR_CODE": "BRD",
         "POI_NAME": "Brainard",
         "CITY_NAME": "Brainerd",
@@ -3687,14 +3093,6 @@
         "COUNTRY_CODE": "DE",
         "LATITUDE": "53.048889000000003",
         "LONGITUDE": "8.7877779999999976"
-    },
-    {
-        "VENDOR_CODE": "BRF",
-        "POI_NAME": "Bradford, England",
-        "CITY_NAME": "Leeds/Bradford",
-        "COUNTRY_CODE": "GB",
-        "LATITUDE": "53.833333000000003",
-        "LONGITUDE": "-1.7833330000000001"
     },
     {
         "VENDOR_CODE": "BRI",
@@ -4753,15 +4151,6 @@
         "LONGITUDE": "-103.094722"
     },
     {
-        "VENDOR_CODE": "CDV",
-        "POI_NAME": "Mile 13 Field, Cordova",
-        "CITY_NAME": "Cordova",
-        "STATE_CODE": "AK",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "60.492221999999998",
-        "LONGITUDE": "-145.47555600000001"
-    },
-    {
         "VENDOR_CODE": "CEB",
         "POI_NAME": "Cebu",
         "CITY_NAME": "Cebu",
@@ -5739,15 +5128,6 @@
         "LONGITUDE": "114.666667"
     },
     {
-        "VENDOR_CODE": "COR",
-        "POI_NAME": "Cordoba",
-        "CITY_NAME": "Cordoba",
-        "STATE_CODE": "CD",
-        "COUNTRY_CODE": "AR",
-        "LATITUDE": "-31.313056",
-        "LONGITUDE": "-64.199444"
-    },
-    {
         "VENDOR_CODE": "COS",
         "POI_NAME": "Colorado Springs",
         "CITY_NAME": "Colorado Springs",
@@ -5764,15 +5144,6 @@
         "COUNTRY_CODE": "US",
         "LATITUDE": "38.818055999999999",
         "LONGITUDE": "-92.219443999999996"
-    },
-    {
-        "VENDOR_CODE": "CPC",
-        "POI_NAME": "Chapelco",
-        "CITY_NAME": "San Martin De Los Andes",
-        "STATE_CODE": "NE",
-        "COUNTRY_CODE": "AR",
-        "LATITUDE": "-40.083333000000003",
-        "LONGITUDE": "-71.133332999999979"
     },
     {
         "VENDOR_CODE": "CPD",
@@ -5798,14 +5169,6 @@
         "COUNTRY_CODE": "DK",
         "LATITUDE": "55.618611000000001",
         "LONGITUDE": "12.657222000000001"
-    },
-    {
-        "VENDOR_CODE": "CPI",
-        "POI_NAME": "Cape Orford Airport",
-        "CITY_NAME": "Cape Orford",
-        "COUNTRY_CODE": "PG",
-        "LATITUDE": "-5.433333333333334",
-        "LONGITUDE": "152.08333333333334"
     },
     {
         "VENDOR_CODE": "CPO",
@@ -5848,14 +5211,6 @@
         "COUNTRY_CODE": "PR",
         "LATITUDE": "18.312221999999998",
         "LONGITUDE": "-65.304167000000007"
-    },
-    {
-        "VENDOR_CODE": "CQD",
-        "POI_NAME": "Shahre-Kord Airport",
-        "CITY_NAME": "Shahre-Kord",
-        "COUNTRY_CODE": "IR",
-        "LATITUDE": "32.29722222222222",
-        "LONGITUDE": "50.842222222222226"
     },
     {
         "VENDOR_CODE": "CQF",
@@ -5991,15 +5346,6 @@
         "COUNTRY_CODE": "US",
         "LATITUDE": "35.33333300000001",
         "LONGITUDE": "-120.733333"
-    },
-    {
-        "VENDOR_CODE": "CSM",
-        "POI_NAME": "Clinton-Sherman-Cordell",
-        "CITY_NAME": "Clinton",
-        "STATE_CODE": "OK",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "35.339722000000002",
-        "LONGITUDE": "-99.200000000000003"
     },
     {
         "VENDOR_CODE": "CSN",
@@ -8464,15 +7810,6 @@
         "LONGITUDE": "-87.530556000000004"
     },
     {
-        "VENDOR_CODE": "EWB",
-        "POI_NAME": "New Bedford/Fall River",
-        "CITY_NAME": "New Bedford",
-        "STATE_CODE": "MA",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "41.676389",
-        "LONGITUDE": "-70.958055999999999"
-    },
-    {
         "VENDOR_CODE": "EWD",
         "POI_NAME": "Wildman Lake Airport",
         "CITY_NAME": "Wildman Lake",
@@ -8658,14 +7995,6 @@
         "COUNTRY_CODE": "IT",
         "LATITUDE": "41.811110999999997",
         "LONGITUDE": "12.2525"
-    },
-    {
-        "VENDOR_CODE": "FDE",
-        "POI_NAME": "Forde",
-        "CITY_NAME": "Forde",
-        "COUNTRY_CODE": "NO",
-        "LATITUDE": "61.392499999999998",
-        "LONGITUDE": "5.7641669999999996"
     },
     {
         "VENDOR_CODE": "FDF",
@@ -10701,29 +10030,12 @@
         "LONGITUDE": "35.041666999999997"
     },
     {
-        "VENDOR_CODE": "HFD",
-        "POI_NAME": "Brainerd Field, Hartford",
-        "CITY_NAME": "Hartford",
-        "STATE_CODE": "CT",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "41.733055999999998",
-        "LONGITUDE": "-72.650000000000006"
-    },
-    {
         "VENDOR_CODE": "HFE",
         "POI_NAME": "Hefei",
         "CITY_NAME": "Hefei",
         "COUNTRY_CODE": "CN",
         "LATITUDE": "31.783332999999999",
         "LONGITUDE": "117.3"
-    },
-    {
-        "VENDOR_CODE": "HFN",
-        "POI_NAME": "Hornafjordur",
-        "CITY_NAME": "Hornafjordur",
-        "COUNTRY_CODE": "IS",
-        "LATITUDE": "64.301666999999995",
-        "LONGITUDE": "-15.231111"
     },
     {
         "VENDOR_CODE": "HFS",
@@ -11836,14 +11148,6 @@
         "LONGITUDE": "30.449999999999999"
     },
     {
-        "VENDOR_CODE": "IFJ",
-        "POI_NAME": "Isafjordur",
-        "CITY_NAME": "Isafjordur",
-        "COUNTRY_CODE": "IS",
-        "LATITUDE": "66.059721999999994",
-        "LONGITUDE": "-23.132777999999998"
-    },
-    {
         "VENDOR_CODE": "IFN",
         "POI_NAME": "Isfahan",
         "CITY_NAME": "Esfahan",
@@ -11985,15 +11289,6 @@
         "COUNTRY_CODE": "US",
         "LATITUDE": "31.085556",
         "LONGITUDE": "-97.686110999999997"
-    },
-    {
-        "VENDOR_CODE": "ILF",
-        "POI_NAME": "Ilford, Manitoba",
-        "CITY_NAME": "Ilford",
-        "STATE_CODE": "MB",
-        "COUNTRY_CODE": "CA",
-        "LATITUDE": "56.066667000000002",
-        "LONGITUDE": "-95.583332999999996"
     },
     {
         "VENDOR_CODE": "ILG",
@@ -13084,14 +12379,6 @@
         "COUNTRY_CODE": "GR",
         "LATITUDE": "37.436110999999997",
         "LONGITUDE": "25.344443999999999"
-    },
-    {
-        "VENDOR_CODE": "JMM",
-        "POI_NAME": "Malmo Harbour Heliport",
-        "CITY_NAME": "Malmo",
-        "COUNTRY_CODE": "SE",
-        "LATITUDE": "55.616943999999997",
-        "LONGITUDE": "13.016389"
     },
     {
         "VENDOR_CODE": "JMO",
@@ -14872,14 +14159,6 @@
         "LONGITUDE": "43.098889"
     },
     {
-        "VENDOR_CODE": "KSZ",
-        "POI_NAME": "Kotlas",
-        "CITY_NAME": "Kotlas",
-        "COUNTRY_CODE": "RU",
-        "LATITUDE": "61",
-        "LONGITUDE": "46.5"
-    },
-    {
         "VENDOR_CODE": "KTA",
         "POI_NAME": "Karratha",
         "CITY_NAME": "Karratha",
@@ -14979,14 +14258,6 @@
         "COUNTRY_CODE": "MY",
         "LATITUDE": "6.9249999999999998",
         "LONGITUDE": "116.83416699999999"
-    },
-    {
-        "VENDOR_CODE": "KUF",
-        "POI_NAME": "Samara/Kuybyshev",
-        "CITY_NAME": "Samara",
-        "COUNTRY_CODE": "RU",
-        "LATITUDE": "53.5",
-        "LONGITUDE": "50.155000000000001"
     },
     {
         "VENDOR_CODE": "KUG",
@@ -15138,14 +14409,6 @@
         "LONGITUDE": "135.0288888888889"
     },
     {
-        "VENDOR_CODE": "KVX",
-        "POI_NAME": "Kirov",
-        "CITY_NAME": "Kirov",
-        "COUNTRY_CODE": "RU",
-        "LATITUDE": "59",
-        "LONGITUDE": "49.5"
-    },
-    {
         "VENDOR_CODE": "KWA",
         "POI_NAME": "Kwajalein",
         "CITY_NAME": "Kwajalein Island",
@@ -15187,14 +14450,6 @@
         "LONGITUDE": "47.968055999999997"
     },
     {
-        "VENDOR_CODE": "KWJ",
-        "POI_NAME": "Kwangju",
-        "CITY_NAME": "Gwangju",
-        "COUNTRY_CODE": "KR",
-        "LATITUDE": "35.116667",
-        "LONGITUDE": "126.816667"
-    },
-    {
         "VENDOR_CODE": "KWK",
         "POI_NAME": "Kwigillingok",
         "CITY_NAME": "Kwigillingok",
@@ -15219,15 +14474,6 @@
         "COUNTRY_CODE": "AU",
         "LATITUDE": "-17.516667000000002",
         "LONGITUDE": "145.41666699999999"
-    },
-    {
-        "VENDOR_CODE": "KWN",
-        "POI_NAME": "Quinhagak",
-        "CITY_NAME": "Quinhagak",
-        "STATE_CODE": "AK",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "59.761111",
-        "LONGITUDE": "-161.86250000000001"
     },
     {
         "VENDOR_CODE": "KWO",
@@ -15279,14 +14525,6 @@
         "COUNTRY_CODE": "FJ",
         "LATITUDE": "-17.316666999999999",
         "LONGITUDE": "179.38333299999999"
-    },
-    {
-        "VENDOR_CODE": "KXK",
-        "POI_NAME": "Komsomolsk-na-Amure",
-        "CITY_NAME": "Komsomolsk-an-Amure",
-        "COUNTRY_CODE": "RU",
-        "LATITUDE": "50.833333000000003",
-        "LONGITUDE": "137"
     },
     {
         "VENDOR_CODE": "KYA",
@@ -15378,14 +14616,6 @@
         "COUNTRY_CODE": "RU",
         "LATITUDE": "55.600000000000001",
         "LONGITUDE": "49.283332999999999"
-    },
-    {
-        "VENDOR_CODE": "KZO",
-        "POI_NAME": "Kzyl-Orda Airport",
-        "CITY_NAME": "Kzyl-Orda",
-        "COUNTRY_CODE": "KZ",
-        "LATITUDE": "44.833333333333336",
-        "LONGITUDE": "65.83333333333333"
     },
     {
         "VENDOR_CODE": "KZS",
@@ -15639,14 +14869,6 @@
         "LONGITUDE": "-86.857221999999979"
     },
     {
-        "VENDOR_CODE": "LCG",
-        "POI_NAME": "La Coruna",
-        "CITY_NAME": "A Coruna",
-        "COUNTRY_CODE": "ES",
-        "LATITUDE": "43.302778000000004",
-        "LONGITUDE": "-8.3766669999999976"
-    },
-    {
         "VENDOR_CODE": "LCH",
         "POI_NAME": "Lake Charles",
         "CITY_NAME": "Lake Charles",
@@ -15704,23 +14926,6 @@
         "COUNTRY_CODE": "FR",
         "LATITUDE": "43.185000000000002",
         "LONGITUDE": "-0.001944"
-    },
-    {
-        "VENDOR_CODE": "LDG",
-        "POI_NAME": "Leshukonskoye Airport",
-        "CITY_NAME": "Leshukonskoye",
-        "COUNTRY_CODE": "RU",
-        "LATITUDE": "64.9",
-        "LONGITUDE": "45.75"
-    },
-    {
-        "VENDOR_CODE": "LDH",
-        "POI_NAME": "Lord Howe Island",
-        "CITY_NAME": "Lord Howe Island",
-        "STATE_CODE": "NS",
-        "COUNTRY_CODE": "AU",
-        "LATITUDE": "-31.537500000000001",
-        "LONGITUDE": "159.079722"
     },
     {
         "VENDOR_CODE": "LDI",
@@ -16666,14 +15871,6 @@
         "LONGITUDE": "-91.256111000000004"
     },
     {
-        "VENDOR_CODE": "LSH",
-        "POI_NAME": "Lashio",
-        "CITY_NAME": "Lashio",
-        "COUNTRY_CODE": "MM",
-        "LATITUDE": "22.966667000000001",
-        "LONGITUDE": "97.75"
-    },
-    {
         "VENDOR_CODE": "LSI",
         "POI_NAME": "Lerwick, Scotland",
         "CITY_NAME": "Shetland Islands",
@@ -16755,14 +15952,6 @@
         "COUNTRY_CODE": "SY",
         "LATITUDE": "35.408332999999999",
         "LONGITUDE": "35.95000000000001"
-    },
-    {
-        "VENDOR_CODE": "LTL",
-        "POI_NAME": "Lastourville",
-        "CITY_NAME": "Lastoursville",
-        "COUNTRY_CODE": "GA",
-        "LATITUDE": "-0.83333299999999999",
-        "LONGITUDE": "12.716666999999999"
     },
     {
         "VENDOR_CODE": "LTN",
@@ -16989,14 +16178,6 @@
         "COUNTRY_CODE": "MY",
         "LATITUDE": "4.8499999999999996",
         "LONGITUDE": "115.405"
-    },
-    {
-        "VENDOR_CODE": "LXA",
-        "POI_NAME": "Lhasa, Tibet",
-        "CITY_NAME": "Lhasa/Lasa",
-        "COUNTRY_CODE": "CN",
-        "LATITUDE": "29.5",
-        "LONGITUDE": "91"
     },
     {
         "VENDOR_CODE": "LXG",
@@ -18360,15 +17541,6 @@
         "COUNTRY_CODE": "MV",
         "LATITUDE": "4.191389",
         "LONGITUDE": "73.528889000000007"
-    },
-    {
-        "VENDOR_CODE": "MLF",
-        "POI_NAME": "Milford",
-        "CITY_NAME": "Milford",
-        "STATE_CODE": "UT",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "38.426667000000002",
-        "LONGITUDE": "-113.011667"
     },
     {
         "VENDOR_CODE": "MLH",
@@ -20891,14 +20063,6 @@
         "LONGITUDE": "5.4000000000000004"
     },
     {
-        "VENDOR_CODE": "OGZ",
-        "POI_NAME": "Ordzhonikidze/Vladikavkaz",
-        "CITY_NAME": "Vladikavkaz",
-        "COUNTRY_CODE": "RU",
-        "LATITUDE": "43.200000000000003",
-        "LONGITUDE": "44.608333000000002"
-    },
-    {
         "VENDOR_CODE": "OHD",
         "POI_NAME": "Ohrid, Macedonia",
         "CITY_NAME": "Ohrid",
@@ -22737,14 +21901,6 @@
         "LONGITUDE": "-97.099444000000005"
     },
     {
-        "VENDOR_CODE": "PND",
-        "POI_NAME": "Punta Gorda",
-        "CITY_NAME": "Punta Gorda",
-        "COUNTRY_CODE": "BZ",
-        "LATITUDE": "16.102778000000001",
-        "LONGITUDE": "-88.807777999999999"
-    },
-    {
         "VENDOR_CODE": "PNH",
         "POI_NAME": "Phnom Penh, Dem.",
         "CITY_NAME": "Phnom Penh",
@@ -23536,14 +22692,6 @@
         "LONGITUDE": "69.833332999999996"
     },
     {
-        "VENDOR_CODE": "PZO",
-        "POI_NAME": "Puerto Ordaz",
-        "CITY_NAME": "Puerto Ordaz",
-        "COUNTRY_CODE": "VE",
-        "LATITUDE": "8.3049999999999979",
-        "LONGITUDE": "-62.734444000000003"
-    },
-    {
         "VENDOR_CODE": "PZU",
         "POI_NAME": "Port Sudan",
         "CITY_NAME": "Port Sudan",
@@ -23559,23 +22707,6 @@
         "COUNTRY_CODE": "CA",
         "LATITUDE": "52.383333",
         "LONGITUDE": "-126.583333"
-    },
-    {
-        "VENDOR_CODE": "QCU",
-        "POI_NAME": "Heliport",
-        "CITY_NAME": "Akunnaaq",
-        "COUNTRY_CODE": "GL",
-        "LATITUDE": "68.75",
-        "LONGITUDE": "-52.333333333333336"
-    },
-    {
-        "VENDOR_CODE": "QDH",
-        "POI_NAME": "Ashford International Rail Station",
-        "CITY_NAME": "Ashford",
-        "STATE_CODE": "EN",
-        "COUNTRY_CODE": "GB",
-        "LATITUDE": "51.13333333333333",
-        "LONGITUDE": "0.8833333333333333"
     },
     {
         "VENDOR_CODE": "QDU",
@@ -24143,15 +23274,6 @@
         "COUNTRY_CODE": "MX",
         "LATITUDE": "26.016667000000002",
         "LONGITUDE": "-98.233333000000002"
-    },
-    {
-        "VENDOR_CODE": "RFD",
-        "POI_NAME": "Rockford",
-        "CITY_NAME": "Chicago",
-        "STATE_CODE": "IL",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "42.194443999999997",
-        "LONGITUDE": "-89.094443999999982"
     },
     {
         "VENDOR_CODE": "RFP",
@@ -25612,14 +24734,6 @@
         "LONGITUDE": "-63.116667000000007"
     },
     {
-        "VENDOR_CODE": "SFJ",
-        "POI_NAME": "Sondre Stromfjord",
-        "CITY_NAME": "Kangerlussuaq",
-        "COUNTRY_CODE": "GL",
-        "LATITUDE": "67.018056000000001",
-        "LONGITUDE": "-50.694167"
-    },
-    {
         "VENDOR_CODE": "SFL",
         "POI_NAME": "Sao Filipe",
         "CITY_NAME": "Sao Filipe",
@@ -25753,14 +24867,6 @@
         "COUNTRY_CODE": "JP",
         "LATITUDE": "43.566667000000002",
         "LONGITUDE": "144.966667"
-    },
-    {
-        "VENDOR_CODE": "SHC",
-        "POI_NAME": "nr. Dandong  ?",
-        "CITY_NAME": "Inda Selassie",
-        "COUNTRY_CODE": "CN",
-        "LATITUDE": "40.027777999999998",
-        "LONGITUDE": "124.072222"
     },
     {
         "VENDOR_CODE": "SHD",
@@ -26726,14 +25832,6 @@
         "LONGITUDE": "117.15000000000001"
     },
     {
-        "VENDOR_CODE": "SRP",
-        "POI_NAME": "Sorstokken",
-        "CITY_NAME": "Stord",
-        "COUNTRY_CODE": "NO",
-        "LATITUDE": "59.793056000000007",
-        "LONGITUDE": "5.3416670000000002"
-    },
-    {
         "VENDOR_CODE": "SRQ",
         "POI_NAME": "Sarasota/Bradenton",
         "CITY_NAME": "Sarasota",
@@ -27181,15 +26279,6 @@
         "COUNTRY_CODE": "CN",
         "LATITUDE": "23.366667",
         "LONGITUDE": "116.666667"
-    },
-    {
-        "VENDOR_CODE": "SWF",
-        "POI_NAME": "Newburgh",
-        "CITY_NAME": "Newburgh",
-        "STATE_CODE": "NY",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "41.503889000000001",
-        "LONGITUDE": "-74.105000000000004"
     },
     {
         "VENDOR_CODE": "SWJ",
@@ -28428,22 +27517,6 @@
         "COUNTRY_CODE": "IL",
         "LATITUDE": "32.010556000000001",
         "LONGITUDE": "34.877222000000003"
-    },
-    {
-        "VENDOR_CODE": "TLW",
-        "POI_NAME": "Talasea",
-        "CITY_NAME": "Talasea",
-        "COUNTRY_CODE": "PG",
-        "LATITUDE": "-5.266667",
-        "LONGITUDE": "150.01666700000001"
-    },
-    {
-        "VENDOR_CODE": "TLY",
-        "POI_NAME": "Plastun Airport",
-        "CITY_NAME": "Plastun",
-        "COUNTRY_CODE": "RU",
-        "LATITUDE": "44.81472222222222",
-        "LONGITUDE": "136.29166666666666"
     },
     {
         "VENDOR_CODE": "TMC",
@@ -29948,15 +29021,6 @@
         "LONGITUDE": "37.278888999999999"
     },
     {
-        "VENDOR_CODE": "USA",
-        "POI_NAME": "Concord Regional Airport",
-        "CITY_NAME": "Concord",
-        "STATE_CODE": "NC",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "35.385",
-        "LONGITUDE": "-80.70944444444444"
-    },
-    {
         "VENDOR_CODE": "USH",
         "POI_NAME": "Ushuaia",
         "CITY_NAME": "Ushuaia",
@@ -30402,15 +29466,6 @@
         "LONGITUDE": "-8.6277779999999993"
     },
     {
-        "VENDOR_CODE": "VGT",
-        "POI_NAME": "N. Las Vegas Air Term.",
-        "CITY_NAME": "Las Vegas",
-        "STATE_CODE": "NV",
-        "COUNTRY_CODE": "US",
-        "LATITUDE": "36.212499999999999",
-        "LONGITUDE": "-115.19611100000002"
-    },
-    {
         "VENDOR_CODE": "VHC",
         "POI_NAME": "Saurimo",
         "CITY_NAME": "Saurimo",
@@ -30449,14 +29504,6 @@
         "COUNTRY_CODE": "VN",
         "LATITUDE": "18.7",
         "LONGITUDE": "105.63333333333334"
-    },
-    {
-        "VENDOR_CODE": "VIJ",
-        "POI_NAME": "Virgin Gorda",
-        "CITY_NAME": "Virgin Gorda",
-        "COUNTRY_CODE": "VG",
-        "LATITUDE": "18.5",
-        "LONGITUDE": "-64.5"
     },
     {
         "VENDOR_CODE": "VIL",
@@ -30640,14 +29687,6 @@
         "LONGITUDE": "82.860556000000003"
     },
     {
-        "VENDOR_CODE": "VNX",
-        "POI_NAME": "Vilanculos",
-        "CITY_NAME": "Vilankulos",
-        "COUNTRY_CODE": "MZ",
-        "LATITUDE": "-22.033332999999999",
-        "LONGITUDE": "35.299999999999997"
-    },
-    {
         "VENDOR_CODE": "VOG",
         "POI_NAME": "Volgograd",
         "CITY_NAME": "Volgograd",
@@ -30686,14 +29725,6 @@
         "COUNTRY_CODE": "AO",
         "LATITUDE": "-17.050000000000001",
         "LONGITUDE": "15.699999999999999"
-    },
-    {
-        "VENDOR_CODE": "VPN",
-        "POI_NAME": "Vopnafjordur",
-        "CITY_NAME": "Vopnafjordur",
-        "COUNTRY_CODE": "IS",
-        "LATITUDE": "65.75",
-        "LONGITUDE": "-14.816667000000001"
     },
     {
         "VENDOR_CODE": "VPS",
@@ -30769,14 +29800,6 @@
         "LONGITUDE": "-92.815832999999998"
     },
     {
-        "VENDOR_CODE": "VSG",
-        "POI_NAME": "Lugansk/Voroshilovgrad",
-        "CITY_NAME": "Luhansk",
-        "COUNTRY_CODE": "UA",
-        "LATITUDE": "48.533332999999999",
-        "LONGITUDE": "39.399999999999999"
-    },
-    {
         "VENDOR_CODE": "VST",
         "POI_NAME": "Vasteras",
         "CITY_NAME": "Stockholm",
@@ -30807,14 +29830,6 @@
         "COUNTRY_CODE": "CU",
         "LATITUDE": "20.987221999999999",
         "LONGITUDE": "-76.935833000000002"
-    },
-    {
-        "VENDOR_CODE": "VTZ",
-        "POI_NAME": "Visakhapatnam",
-        "CITY_NAME": "Vishakhapatnam",
-        "COUNTRY_CODE": "IN",
-        "LATITUDE": "17.721111000000001",
-        "LONGITUDE": "83.224722"
     },
     {
         "VENDOR_CODE": "VUP",
@@ -30961,14 +29976,6 @@
         "COUNTRY_CODE": "US",
         "LATITUDE": "38.892143",
         "LONGITUDE": "-77.036156"
-    },
-    {
-        "VENDOR_CODE": "WAT",
-        "POI_NAME": "Waterford",
-        "CITY_NAME": "Waterford",
-        "COUNTRY_CODE": "IE",
-        "LATITUDE": "52.200000000000003",
-        "LONGITUDE": "-7.0666669999999998"
     },
     {
         "VENDOR_CODE": "WAW",
@@ -32644,15 +31651,6 @@
         "LONGITUDE": "-94.700000000000003"
     },
     {
-        "VENDOR_CODE": "YGZ",
-        "POI_NAME": "Grise Fiord, N.W.T.",
-        "CITY_NAME": "Grise Fiord",
-        "STATE_CODE": "NT",
-        "COUNTRY_CODE": "CA",
-        "LATITUDE": "76.5",
-        "LONGITUDE": "-82.25"
-    },
-    {
         "VENDOR_CODE": "YHA",
         "POI_NAME": "Port Hope Simpson, Nfld",
         "CITY_NAME": "Port Hope Simpson",
@@ -33210,15 +32208,6 @@
         "LONGITUDE": "-86"
     },
     {
-        "VENDOR_CODE": "YOH",
-        "POI_NAME": "Oxford House, Manitoba",
-        "CITY_NAME": "Oxford House",
-        "STATE_CODE": "MB",
-        "COUNTRY_CODE": "CA",
-        "LATITUDE": "54.950000000000003",
-        "LONGITUDE": "-95.283332999999999"
-    },
-    {
         "VENDOR_CODE": "YOJ",
         "POI_NAME": "High Level, Alberta",
         "CITY_NAME": "High Level",
@@ -33432,15 +32421,6 @@
         "COUNTRY_CODE": "CA",
         "LATITUDE": "43.826943999999997",
         "LONGITUDE": "-66.088611"
-    },
-    {
-        "VENDOR_CODE": "YQK",
-        "POI_NAME": "Kenora, Ontario",
-        "CITY_NAME": "Kenora",
-        "STATE_CODE": "ON",
-        "COUNTRY_CODE": "CA",
-        "LATITUDE": "49.789721999999998",
-        "LONGITUDE": "-94.362778000000006"
     },
     {
         "VENDOR_CODE": "YQL",
@@ -34117,15 +33097,6 @@
         "LONGITUDE": "-81.153889000000007"
     },
     {
-        "VENDOR_CODE": "YXX",
-        "POI_NAME": "Abbotsford, British Columbia",
-        "CITY_NAME": "Abbotsford",
-        "STATE_CODE": "BC",
-        "COUNTRY_CODE": "CA",
-        "LATITUDE": "49.025556000000002",
-        "LONGITUDE": "-122.36194399999999"
-    },
-    {
         "VENDOR_CODE": "YXY",
         "POI_NAME": "Whitehorse, Yukon",
         "CITY_NAME": "Whitehorse",
@@ -34543,15 +33514,6 @@
         "LONGITUDE": "-94.166667000000004"
     },
     {
-        "VENDOR_CODE": "ZGS",
-        "POI_NAME": "Gethsemani, Quebec",
-        "CITY_NAME": "La Romaine",
-        "STATE_CODE": "QC",
-        "COUNTRY_CODE": "CA",
-        "LATITUDE": "50.333333000000003",
-        "LONGITUDE": "-60.666666999999997"
-    },
-    {
         "VENDOR_CODE": "ZGU",
         "POI_NAME": "Gaua Airport",
         "CITY_NAME": "Gaua",
@@ -34566,14 +33528,6 @@
         "COUNTRY_CODE": "CN",
         "LATITUDE": "21",
         "LONGITUDE": "110.333333"
-    },
-    {
-        "VENDOR_CODE": "ZHS",
-        "POI_NAME": "Railway Station",
-        "CITY_NAME": "Klosters",
-        "COUNTRY_CODE": "CH",
-        "LATITUDE": "46.88333333333333",
-        "LONGITUDE": "9.866666666666667"
     },
     {
         "VENDOR_CODE": "ZHY",
@@ -34853,46 +33807,5 @@
         "COUNTRY_CODE": "LA",
         "LATITUDE": "16.533332999999999",
         "LONGITUDE": "104.75"
-    },
-    {
-        "VENDOR_CODE": "ZWL",
-        "POI_NAME": "Wollaston Lake",
-        "CITY_NAME": "Wollaston Lake",
-        "STATE_CODE": "SK",
-        "COUNTRY_CODE": "CA",
-        "LATITUDE": "58.100000000000001",
-        "LONGITUDE": "-103.183333"
-    },
-    {
-        "VENDOR_CODE": "ZXT",
-        "POI_NAME": "Zabrat Airport",
-        "CITY_NAME": "Baku",
-        "COUNTRY_CODE": "AZ",
-        "LATITUDE": "40.485",
-        "LONGITUDE": "49.98361111111111"
-    },
-    {
-        "VENDOR_CODE": "ZYK",
-        "POI_NAME": "Shekou Ferry Port",
-        "CITY_NAME": "Shekou",
-        "COUNTRY_CODE": "CN",
-        "LATITUDE": "22.833333333333332",
-        "LONGITUDE": "113.98333333333333"
-    },
-    {
-        "VENDOR_CODE": "ZYL",
-        "POI_NAME": "Sylhet",
-        "CITY_NAME": "Sylhet",
-        "COUNTRY_CODE": "BD",
-        "LATITUDE": "24.960556",
-        "LONGITUDE": "91.874722000000006"
-    },
-    {
-        "VENDOR_CODE": "ZZU",
-        "POI_NAME": "Mzuzu",
-        "CITY_NAME": "Mzuzu",
-        "COUNTRY_CODE": "MW",
-        "LATITUDE": "-11.433332999999999",
-        "LONGITUDE": "34"
     }
 ]

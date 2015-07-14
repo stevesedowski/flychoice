@@ -1,6 +1,9 @@
 (function(){
 	var apiCall = function($http) {
 
+		var tmpAirportCode = [];
+		var airportInfo = {};
+
 		var getCityInfo = function(){
 			return $http.get('/cities')
 				.then(function(response){
@@ -20,6 +23,7 @@
 			var destination = flightData.destination;
 			var departuredate = flightData.departuredate;
 			var returndate = flightData.returndate;
+			// alert("Inside getFlights-----//depart: " + departuredate)
 			// alert("origin: " + origin + " destination: " + destination + " departuredate: " + departuredate + " returndate: "  + returndate)
 			// alert(Object.getOwnPropertyDescriptor(flightData));
 			// return $http.post('/flights', {params:{"origin": origin, "destination": destination, "departuredate": departuredate, "returndate": returndate}})
@@ -33,10 +37,36 @@
 			// 	})
 		}
 
+		var getAirportCity = function(airportCode){
+			console.log("service call | airport code: " + airportCode);
+console.log("array: " + tmpAirportCode.indexOf(airportCode))
+
+			if ( tmpAirportCode.indexOf(airportCode) )
+			{
+				return null;
+			}
+
+			tmpAirportCode.push(airportCode);
+
+			// return $http.get('/themes-outdoors')
+			// 				.then(function(response){
+			// 		return response.data;
+			// 	});
+
+			
+			return $http.post('/airport_code', {airport_code: airportCode})
+				.then(function(response){
+					
+					return response.data;
+				})
+		}
+
 		return{
 			getCityInfo: getCityInfo,
 			getThemeInfo: getThemeInfo,
-			getFlights: getFlights
+			getFlights: getFlights,
+			getAirportCity: getAirportCity
+			
 		};
 	}
 	// angular.module('app').controller('apiCtrl', function($scope,$routeParams,$location))

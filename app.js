@@ -575,6 +575,29 @@ app.get('/cities', function (req, res) {
 
   sabre_dev_studio_flight.get('/v1/lists/supported/cities', options, cityCall);
 });
+// // MAIN PAGE API Call----------------------------------------------------------->>>
+// Retrieve city and state information for an airport code
+
+app.post('/airport_code', function(req,res){
+  // var airportCode = req.body.airport_code;
+  var airportCode = 'NYC';
+  // res.send("code: " + airportCode)
+
+  // db.themes.find({airport: 'NYC'}, {'theme': 1}, function (err, docs) {
+  //   console.log("Returned info for the themes page: " + docs);
+  //   res.json(docs);
+  // })
+
+  db.airportDB.find({VENDOR_CODE: airportCode}, {'CITY_NAME': 1}, function (err, docs){
+    console.log("returned city " + docs);
+    res.send(docs)
+  });
+  // db.airportDB.find({VENDOR_CODE: airportCode}, function(err, docs){
+  //   airportInfo = docs;
+  // });
+  // res.send('airportInfo')
+  // res.json(airportInfo);
+})
 // MAIN PAGE API Call----------------------------------------------------------->>>
 // User subits flight information: Origin, Destination, Departure Date, Return Date
 

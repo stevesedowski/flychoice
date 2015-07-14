@@ -10,8 +10,6 @@
   margin-right: auto;
 }
 
-
-
 .dates {
   width: 140px;
   height: 40px;
@@ -42,7 +40,7 @@
 input {
     border: 1px solid rgba(255,255,255,0.6);
     border-radius: 2px;
-    color: #fff;
+    color: #ffffff;
     -webkit-box-shadow: 
       inset 0 0 8px  rgba(0,0,0,0.1),
             0 0 16px rgba(0,0,0,0.1); 
@@ -54,21 +52,20 @@ input {
             0 0 16px rgba(0,0,0,0.1); 
     padding: 0px 1px 0px 10px;
     background: rgba(255,255,255,0.23);
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    font-size: 1.2em;
 }
 
-input {
-  transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  font-size: 1.2em;
-}
 
 input.airports {
   width: 220px;
   height: 40px;
   letter-spacing: 0.044em;
+  color: #ffffff;
 }
 
 .input:hover {
@@ -82,6 +79,22 @@ input.airports {
   height: 40px;
 }
 
+/*Placeholder Text Color*/
+::-webkit-input-placeholder {
+   color: #ffffff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ffffff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ffffff; 
+}
+
+:-ms-input-placeholder {  
+   color: #ffffff;
+}
 
 
 

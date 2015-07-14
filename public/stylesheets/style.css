@@ -41,3 +41,15 @@ a {
 .autocomplete-group { padding: 2px 5px; }
 .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
 
+.inputSuccess,form .ValidationLiveSuccess,form .ValidationLiveSuccess:focus {
+  border:2px solid #90ee90; border-radius: 2px;
+}
+
+.inputFail,form input.ng-dirty:not(.ValidationLiveSuccess),form select.ng-dirty:not(.ValidationLiveSuccess) {
+  border:2px solid rgba(255, 140, 0, .71); border-radius: 2px;
+}
+
+.inputFocus,form .ValidationLiveSuccess:focus,form input.ng-dirty:not(.ValidationLiveSuccess):focus,form input:focus,form select.ng-dirty:not(.ValidationLiveSuccess):focus,form select:focus {
+  border-color:none; border-radius: 2px;
+}
+

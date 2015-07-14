@@ -1,5 +1,5 @@
 (function(){
-	var app = angular.module('app', ['ngRoute']);
+	var app = angular.module('app', ['ngRoute','directives.customvalidation.customValidationTypes']);
 
 	// define routes here....
 	// app.config(function($routeProvider){
