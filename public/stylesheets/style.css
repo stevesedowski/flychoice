@@ -53,3 +53,10 @@ a {
   border-color:none; border-radius: 2px;
 }
 
+.returnedFlights {
+  /*display: inline-block;*/
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

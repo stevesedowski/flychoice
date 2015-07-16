@@ -602,7 +602,7 @@ app.post('/airport_code', function(req,res){
 // User subits flight information: Origin, Destination, Departure Date, Return Date
 
 app.post('/flights', function (req, res) {
-
+console.log("inside the API call function...........")
   var options = {};
   var destinationThemes = {};
   var returnedTheme = [];

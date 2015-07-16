@@ -19,12 +19,12 @@
 		}
 
 		var getFlights = function(flightData){
-			var origin = flightData.origin;
-			var destination = flightData.destination;
+			var origin = flightData.origin.toUpperCase();
+			var destination = flightData.destination.toUpperCase();
 			var departuredate = flightData.departuredate;
 			var returndate = flightData.returndate;
 			// alert("Inside getFlights-----//depart: " + departuredate)
-			// alert("origin: " + origin + " destination: " + destination + " departuredate: " + departuredate + " returndate: "  + returndate)
+			console.log("api origin: " + origin + " api destination: " + destination + " api departuredate: " + departuredate + " api returndate: "  + returndate);
 			// alert(Object.getOwnPropertyDescriptor(flightData));
 			// return $http.post('/flights', {params:{"origin": origin, "destination": destination, "departuredate": departuredate, "returndate": returndate}})
 			return $http.post('/flights', {origin: origin, destination: destination, departuredate: departuredate, returndate: returndate})

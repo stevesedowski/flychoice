@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>FlyChoice: Sabre Dev Studio REST APIs</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/inputValidation.main.css"> -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/datepicker.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/ui-grid-unstable.css">
+
+</head>
+<body>
+<div ng-controller="mainCtrl" class="page">
+	<div class="flightChoice container">
+		<div>
+			<span class="main-title">FlyChoice</span>
+<!-- <div class="alert alert-warning alert-dismissible fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+      <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+    </div> -->
+			<br>
+			<span class="sub-title">Choose a Place. Choices Abound.</span>
+		</div>
+		<form ng-submit="submit()" novalidate>
+			<div class="row">
+				<div class="col-md-offset-1"></div>
+				<div class="col-md-2">
+					<input class="input airports" 
+					id="originAirport" 
+					type="search"  
+					ng-model="origin" 
+					name="origin" 
+					title="origin" 
+					placeholder="Taking Off From..." 
+					onfocus="this.placeholder = ''" 
+					onblur="this.placeholder = 'Taking Off From...'"			    
+		    		validation-min-length="{value:3}"
+					/>
+				</div>
+				<div class="col-md-2">
+					<input class="input airports" 
+					id="destinationAirport" 
+					type="search" 
+					ng-model="destination" 
+					name="destination" 
+					placeholder="Landing In..." 
+					onfocus="this.placeholder = ''" 
+					onblur="this.placeholder = 'Landing In...'" 
+					validation-min-length="{value:3}"
+					/>
+				</div>
+				<div class="col-md-2">
+					<input class="input dates" 
+					placeholder="Leaving..."
+					id="departure" type="search" 
+					ng-model="departuredate" 
+					validation-min-length="{value:10}"
+					validation-max-length="{value:10}"
+					/>
+				</div>
+				<div class="col-md-2">
+					<input class="input dates" 
+					id="return" 
+					placeholder="Returning..."
+					type="search" 
+					ng-model="returndate" 
+					validation-min-length="{value:10}"
+					validation-max-length="{value:10}"
+					/>
+				</div>
+				<div class="col-md-2">
+					<button class="search col-md-2">Search</button>
+				</div>
+				<div class="col-md-offset-1"></div>
+			</form>
+
+		<div ng-if="myData" ui-grid="{ data: myData }" class="myGrid"></div>
+	</div>
+
+	<div name-of-directive></div>
+
+	<div ng-repeat="f in informationAboutFlights">
+	<div>
+			<div ng-if="f && f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length === 2">
+				<br>
+					<br>				
+					{{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.Amount}} {{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.CurrencyCode}}
+					<br>Departure:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity }}
+					<br>Departure Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime}}
+					<br>Arrival Airport: 
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity }}
+					<br>Arrival Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalDateTime}}
+					<br>Travel Time: 
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].ElapsedTime}}
+					<br>Marketing Airline:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].MarketingAirline.Code}} 
+					<br>Flight Number:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].FlightNumber}} | 
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].FlightNumber}} 
+					<br>
+					One Stop
+					<br>
+					<br>
+					Second Segment:
+					
+					<br>Departure: 
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].DepartureAirport.LocationCode  | airportCodeToCity }}
+					<br>Departure Time: 
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].DepartureDateTime}}
+					<br>Arrival: 
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].ArrivalAirport.LocationCode  | airportCodeToCity }}	
+					<br>Arrival Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].ArrivalDateTime}}
+					<br>Travel Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].ElapsedTime}}		
+
+
+					<br><b>Returning:</b>
+					<br>Flight Number:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].FlightNumber}} | 	
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].FlightNumber}}
+					<br>Return Departure Airport:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode  | airportCodeToCity}}, {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCountry}}
+					<br>Return Date Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureDateTime}}
+					<br>Connecting Flight Airport:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalAirport.LocationCode  | airportCodeToCity }}
+					<br>Arrival Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalDateTime}}
+					<br>Return Travel Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ElapsedTime}}
+					<br>Marketing Airline Returning:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].MarketingAirline.Code}} 
+					<br>
+					<br>Second Leg:
+					<br>Return Departure Airport:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].DepartureAirport.LocationCode  | airportCodeToCity }}
+					<br>Return Date Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].DepartureDateTime}}
+					<br>Landing Flight Airport:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].ArrivalAirport.LocationCode  | airportCodeToCity }}
+					<br>Arrival Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].ArrivalDateTime}}
+					<br>Return Travel Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].ElapsedTime}}					
+					<!-- Some have no on-time performance information -->
+					<br>
+					<br>On Time Performance:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].OnTimePerformance.Level}}
+					<br>Seats Remaining:
+					{{f.AirItineraryPricingInfo.FareInfos.FareInfo[1].TPA_Extensions.SeatsRemaining.Number}} 
+
+			</div>
+			<div ng-if="f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length === 1">
+				<br>
+				{{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.Amount}} {{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.CurrencyCode}}
+					<br>Departure:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity  }}, {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCountry  }}
+
+					<br>Departure Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime}}
+
+					<br>Arrival:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity}}
+					<br>Arrival Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalDateTime}}
+
+					<br>Travel Time (min)
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ElapsedTime}}
+					<br>
+					<br>Flight Number:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].FlightNumber}} | {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].FlightNumber}}
+					<br>Marketing Airline:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].MarketingAirline.Code}}  | {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].MarketingAirline.Code}}
+					<br>Return Departure Airport:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode  | airportCodeToCity }}
+					<br>Departure Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime}}
+					<br>Return Arrival Airport:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalAirport.LocationCode  | airportCodeToCity }}
+					<br>Arrival Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalDateTime}}
+					<br>Return Travel Time:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ElapsedTime}}
+					<br>On Time Performance:
+					{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].OnTimePerformance.Level}}
+					<br>Seats Remaining:
+					{{f.AirItineraryPricingInfo.FareInfos.FareInfo[1].TPA_Extensions.SeatsRemaining.Number}}
+					<br>Non-Stop
+
+
+			</div> 
+
+<!-- 			<div ng-if="f.AirItinerary.OriginDestinationOptions.OriginDestinationOption.length === 1">
+				ONE<br>
+					{{ f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0] }}
+			</div> -->
+
+			<div>How many flight segments?--> {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length}}</div>
+			<hr>
+	</div>
+  </div>
+
+
+<!-- start -->
+<!-- <div ng-repeat-start="array in choiceFlights"></div>
+	<div ng-repeat="i in array.DestinationLocation">
+		info: {{i}}
+	</div>
+<div ng-repeat-end></div> -->
+<!-- end -->
+
+
+ 	<div ng-repeat='choice in choiceFlights'>
+ 		There are {{choice.length}} trips for {{choice[0].Theme}} destinations starting at {{choice[0].LowestNonStopFare}}!
+
+
+<!-- 		Index:  Choice destination airport: {{choice[0].DestinationLocation}}&nbsp;{{getAirportCityInfo(choice[0].DestinationLocation)}} 
+		<br>
+		price: {{choice[0].LowestNonStopFare}}
+		<br>
+		departure date: {{choice.DepartureDateTime}}
+		<br>
+		return date: {{choice.ReturnDateTime}}
+		<br>
+		theme: {{choice[0].Theme}} -->
+		<hr>
+	</div>
+</div>
+
+
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascripts/angular.min.js"></script>
+	<script type="text/javascript" src="javascripts/ui-grid-unstable.js"></script>
+	<script type="text/javascript" src="javascripts/ngapp.js"></script>
+	<script type="text/javascript" src="javascripts/mainCtrl.js"></script>
+	<script type="text/javascript" src="javascripts/angular-route.js"></script>
+	<script type="text/javascript" src="javascripts/apiService.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.autocomplete.js"></script>
+	<script type="text/javascript" src="javascripts/autocomplete.js"></script>
+	<script type="text/javascript" src="javascripts/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="javascripts/selectDates.js"></script>
+	<script type="text/javascript" src="javascripts/angular-ui-form-validation.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+

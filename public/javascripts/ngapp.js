@@ -1,5 +1,5 @@
 (function(){
-	var app = angular.module('app', ['ngRoute','directives.customvalidation.customValidationTypes']);
+	var app = angular.module('app', ['ngRoute','directives.customvalidation.customValidationTypes', 'ui.grid']);
 
 	// define routes here....
 	// app.config(function($routeProvider){
