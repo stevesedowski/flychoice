@@ -1,0 +1,40 @@
+                    <tr>
+                        <td>{{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.Amount}}</td>
+
+                        <!-- Departure Flight -->
+                        <td>{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime}} Leave {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity }}, {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCountry }}
+                        <br>
+                        {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalDateTime}} Land In {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity}}</td>
+                        <!-- End Departure Flight -->
+
+                        <!-- Return Flight -->
+                        <td>{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime}} Leave {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity }}
+                        <br>
+                        {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ElapsedTime}} Land In {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity }}
+                        </td>
+
+                        <td>{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].MarketingAirline.Code | airlineCompanyNameFilter }}</td>
+                        <td>Non Stop</td>
+                        <td>{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ElapsedTime}}</td>
+                        <td>{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].OnTimePerformance.Level | onTimePerformanceFilter }}</td>
+                        <td>{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].FlightNumber}}</td>
+                        
+                    </tr>
+
+
+                        <br>Travel Time (min) 
+                        <br>
+                        <br>Flight Number:  | {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].FlightNumber}}
+
+                   
+
+                        <br>Return Departure Airport: 
+                        <br>Departure Time: 
+                        <br>Return Arrival Airport: 
+                        <br>Arrival Time: 
+                        <br>Return Travel Time: 
+                        <br>On Time Performance: 
+                        <!-- <br>Seats Remaining: {{f.AirItineraryPricingInfo.FareInfos.FareInfo[1].TPA_Extensions.SeatsRemaining.Number}} -->
+                   
+                        <!-- <br>  {{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.CurrencyCode}} -->
+                            <!--  <br>Marketing Airline:  | {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].MarketingAirline.Code | airlineCompanyNameFilter }} -->

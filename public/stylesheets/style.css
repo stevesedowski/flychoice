@@ -13,6 +13,34 @@ a {
   color: #00B7FF;
 }
 
+th {
+  text-align: center;
+}
+
+.cell-headers {
+  color: #ffffff;
+}
+
+.odd {
+  background: rgba(255, 255, 255, .3);
+}
+
+.even {
+  background: rgba(255, 255, 255, .15);  
+}
+
+.flight-info-cells {
+  text-align: left;
+  color: #ffffff;
+  font-size: .98em;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+}
+
+.center-info {
+  text-align: center;
+}
 .page {
 	/*display: inline-block;*/
 	width:100%;
