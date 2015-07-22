@@ -46,7 +46,8 @@ th {
 	width:100%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 220px;
+	/*margin-top: 220px;*/
+  margin-top: 110px;
 }
 
 .main-title {
@@ -84,7 +85,169 @@ th {
 .returnedFlights {
   /*display: inline-block;*/
   text-align: center;
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.price {
+  padding-left: 4px;
+  padding-right: 6px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#header-perform-width {
+  width: 89px;
+  padding-left: 3px;
+}
+
+#header-airline-width {
+  width: 100px;
+}
+
+#header-stops-width {
+  width: 60px;
+}
+
+#header-time-width {
+  width: 65px;
+}
+
+#header-trip-width {
+  width: 217px;
+}
+
+#header-price-width {
+  width: 99px;
+}
+
+.more-results {
+  border: 1px solid white; 
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1); 
+  -moz-box-shadow: 
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1); 
+  box-shadow: 
+    inset 0 0 8px  rgba(0,0,0,0.1),
+          0 0 16px rgba(0,0,0,0.1); 
+  padding: 3px;
+  background: rgba(255,255,255,0.23);
+  margin: 0 auto;
+  transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  font-size: 1.2em;
+  width: 170px;
+  color: #ffffff;
+}
+
+.more-results:hover {
+  background: rgba(144, 238, 144, 0.75);
+  cursor: pointer;
+}
+
+.more-results:active {
+  vertical-align: top;
+  background: rgba(144, 238, 144, 1);
+  padding: 8px 12px 5px;
+}
+
+.choice-results {
+  font-size: 1.4em;
+  color: #ffffff;
+}
+
+.choice-results-hover {
+  font-size: 1.2em;
+  transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.choice-results-hover:hover {
+  background: rgba(144, 238, 144, 0.75);
+  cursor: pointer;
+}
+
+.choice-prices {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.choice-div-size {
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  display:inline-block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 9px 7px;
+  height: 50px;
+}
+
+#spacer {
+  height:2px;
+  width:80%;
+}
+
+#spacer-more {
+  height:7px;
+  width:80%;
+}
+
+.choice-themes {
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  margin: 2px 0px;
+  padding: 2px 130px;
+  height: 34px;
+  line-height: 35px;
+  font-size: 90%;
+  text-align: left !important;
+}
+
+.results-main-title {
+  font-size: 3em;
+  color: #ffffff;
+  font-weight:400;
+  margin: 1px 2px 1px 2px;
+}
+
+.smallerBar {
+  /*margin: 0 20px;*/
+  width: 80%;
+  margin: 0 auto;
+}
+.fRight {
+  float: right;
+}
+
+.theme-font {
+  font-weight: 600;
+}
+
+.no-cursor {
+  cursor: default;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.choice-spacer {
+  height: 20px;
+  width: 80%;
 }

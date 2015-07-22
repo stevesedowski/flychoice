@@ -1,0 +1,163 @@
+<div name-of-directive></div>
+        <div ng-hide="val" id="spin-spacer">
+            <div class="loading bar">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div ng-if="myData">
+    
+            <div class="results-main-title center-info">Your Chosen Trip</div>
+            <table border="0" class="returnedFlights" align="center">
+                <thead>
+                    <tr>
+                        <th class="cell-headers" id="header-price-width">Price</th>
+                        <th class="cell-headers" id="header-trip-width">Depart</th>
+                        <th class="cell-headers" id="header-time-width">Travel Time</th>
+                        <th class="cell-headers" id="header-trip-width">Return</th>
+                        <th class="cell-headers" id="header-time-width">Travel Time</th>
+                        <th class="cell-headers" id="header-airline-width">Airline</th>
+                        <th class="cell-headers" id="header-stops-width">Stops</th>
+                        <th class="cell-headers" id="header-perform-width">On Time Performance</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="f in informationAboutFlights | limitTo: limit">
+                    <tr ng-if="f && f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length === 2" style="padding-bottom: 20px;">
+
+                        <td class="flight-info-cells price" ng-class-odd="'odd'" ng-class-even="'even'" id="header-price-width">
+                            {{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.Amount | currency }}
+                        </td>
+
+                        <td class="flight-info-cells" ng-class-odd="'odd'" ng-class-even="'even'" id="header-trip-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime | date: 'shortTime'}} Leave 
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity }}
+                            <br>
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalDateTime | date: 'shortTime'}} Land In 
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity }}
+                            <br>
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].DepartureDateTime | departureCityFilter }} 
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].DepartureAirport.LocationCode | airportCodeToCity }} 
+                            <br>
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].ArrivalDateTime | arrivalCityFilter | date: 'shortTime' }} {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].ArrivalAirport.LocationCode | airportCodeToCity }} 
+                        </td>
+
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-time-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].ElapsedTime | travelTimeFilter  }}
+                        </td>
+
+                        <!-- RETURNING FLIGHT SEGMENT -->
+                        <td class="flight-info-cells" ng-class-odd="'odd'" ng-class-even="'even'" id="header-trip-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureDateTime | date: 'shortTime'}} Leave 
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity}}
+                            <br>
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalDateTime | date: 'shortTime'}} Land In 
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity }}
+                            <br>
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].DepartureDateTime | departureCityFilter }} 
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].DepartureAirport.LocationCode | airportCodeToCity }}
+                            <br>
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].ArrivalDateTime | arrivalCityFilter  | date: 'shortTime'}} 
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].ArrivalAirport.LocationCode | airportCodeToCity }}
+                        </td>
+
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-time-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].ElapsedTime | travelTimeFilter}}
+                        </td>
+
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-airline-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].MarketingAirline.Code | airlineCompanyNameFilter }} 
+                        </td>
+
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-stops-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length | numSegmentsFilter }}
+                        </td>
+
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-perform-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].OnTimePerformance.Level | onTimePerformanceFilter }}
+                        </td>
+
+                    </tr>
+                    <!-- FOR ONE FLIGHT SEGMENT -->
+                    <tr ng-if="f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length === 1" class="table-rows">
+                        <td class="flight-info-cells price" ng-class-odd="'odd'" ng-class-even="'even'" id="header-price-width">
+                            {{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.Amount | currency}}
+                        </td>
+
+                        <!-- Departure Flight -->
+                        <td class="flight-info-cells" ng-class-odd="'odd'" ng-class-even="'even'" id="header-trip-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime | date: 'shortTime' }} Leave {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity }}
+
+                            <br> 
+
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalDateTime | date: 'shortTime' }} Land In {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity}}
+                        </td>
+                        <!-- End Departure Flight -->
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-time-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ElapsedTime | travelTimeFilter}}
+                        </td>
+                        <!-- Return Flight -->
+                        <td class="flight-info-cells" ng-class-odd="'odd'" ng-class-even="'even'" id="header-trip-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime | date: 'shortTime'}} Leave {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity }}
+
+                            <br> 
+
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalDateTime | date: 'shortTime'}} Land In {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity }}
+                        </td>
+
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-time-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ElapsedTime | travelTimeFilter}}
+                        </td>
+
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-airline-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].MarketingAirline.Code | airlineCompanyNameFilter }}
+                        </td>
+
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-stops-width">Nonstop</td>
+
+                        <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'" id="header-perform-width">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].OnTimePerformance.Level | onTimePerformanceFilter }}
+                        </td>
+
+<!--                         <td class="flight-info-cells center-info" ng-class-odd="'odd'" ng-class-even="'even'">
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].FlightNumber}}
+                        </td> -->
+
+                    </tr>
+                    <tr><td height="2px"></td></tr>
+                </tbody>
+            </table>
+            <tr><td height="2px"></td></tr>
+            <tr>
+                <td colspan="8">
+                    <div class="center-info more-results" ng-show="activateScrolling" ng-click="loadMore()">Load More Flights...</div>
+                </td>
+            </tr>
+        </div>
+
+        <div ng-show="choiceFlights" class="results-main-title center-info">Your Trip Choices</div>
+        <div class="center-info choice-results" ng-repeat='choice in choiceFlights'>
+            <div ng-if="choice[0].LowestFare > 0">
+                <span ng-model="collapsed" ng-click="collapsed=!collapsed">
+                    <div class="choice-div-size choice-results-hover" ng-class-odd="'odd'" ng-class-even="'even'">
+                        
+                        Choose from {{ choice.length }} <span class="theme-font">{{ choice[0].Theme | capitalize:true}}</span> destinations starting at 
+                        <span class="choice-prices">{{ choice[0].LowestFare | currency }}!</span>
+                        <div id="spacer-more"></div>
+                            <div ng-show="collapsed" ng-repeat='c in choice' class="smallerBar">
+
+                                <div ng-if='c.LowestFare != null' ng-class-odd="'odd'" ng-class-even="'even'" class="choice-themes">
+                                    Fly from {{ flyingFrom | airportCodeToCity }} to {{  c.DestinationLocation | airportCodeToCity }} for <span class="fRight">{{c.LowestFare | currency}} </span>
+                                </div>
+                            </div>
+                        <div id="spacer-more"></div>
+                    </div>
+                </span>
+                <div id="spacer"></div>
+            </div>
+        </div>

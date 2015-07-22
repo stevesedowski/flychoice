@@ -619,7 +619,6 @@ console.log("inside the API call function...........")
     var flightCall = function(error,data) {
         if(error) {
             console.log(error);
-            res.send(0);
         } else {
             data = JSON.parse(data)
             finalResponse.push(data);
@@ -635,7 +634,6 @@ console.log("inside the API call function...........")
   var destinationCall = function (error, data) {
     if (error) {
       console.log(error);
-      res.send(0);
     } else {
       try {
 
@@ -691,19 +689,13 @@ console.log("inside the API call function...........")
   //   })
 
   db.themes.find({airport: destination}, {'theme': 1}, function(err, docs){
-    console.log('docs length: ' + docs.length)
-    if (docs.length == 0) {
-      console.log("no docs!!")
-      res.send(0);
-    } else {
-      parentCount = docs.length;
-      for(var i = 0 ; i < docs.length ; i++){
-        (function(index){
-          returnedTheme = docs[index];
-          console.log(returnedTheme);
-          sabre_dev_studio_flight.get('/v1/shop/flights/fares?origin=' + origin + '&theme=' + returnedTheme.theme + '&departuredate=' + departuredate + '&returndate=' + returndate, options, destinationCall);
-        })(i)
-      }    
+    parentCount = docs.length;
+    for(var i = 0 ; i < docs.length ; i++){
+      (function(index){
+        returnedTheme = docs[index];
+        console.log(returnedTheme);
+        sabre_dev_studio_flight.get('/v1/shop/flights/fares?origin=' + origin + '&theme=' + returnedTheme.theme + '&departuredate=' + departuredate + '&returndate=' + returndate, options, destinationCall);
+      })(i)
     }
   });
 

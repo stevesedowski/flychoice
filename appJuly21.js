@@ -603,6 +603,7 @@ app.post('/airport_code', function(req,res){
 
 app.post('/flights', function (req, res) {
 console.log("inside the API call function...........")
+
   var options = {};
   var destinationThemes = {};
   var returnedTheme = [];
@@ -610,6 +611,7 @@ console.log("inside the API call function...........")
   var destination = req.body.destination;
   var departuredate = req.body.departuredate;
   var returndate = req.body.returndate;
+  console.log("INFORMATION---------------origin: " + origin + " destination " + destination + " departuredate " + departuredate + " return date  " + returndate)
   var parentCount = 0;
   var count = 0;
   var finalResponse = [];
@@ -634,6 +636,7 @@ console.log("inside the API call function...........")
 
   var destinationCall = function (error, data) {
     if (error) {
+      console.log("destination Call error right away....")
       console.log(error);
       res.send(0);
     } else {
@@ -701,6 +704,9 @@ console.log("inside the API call function...........")
         (function(index){
           returnedTheme = docs[index];
           console.log(returnedTheme);
+          console.log("returned themes above...")
+          
+          console.log('/v1/shop/flights/fares?origin=' + origin + '&theme=' + returnedTheme.theme + '&departuredate=' + departuredate + '&returndate=' + returndate)
           sabre_dev_studio_flight.get('/v1/shop/flights/fares?origin=' + origin + '&theme=' + returnedTheme.theme + '&departuredate=' + departuredate + '&returndate=' + returndate, options, destinationCall);
         })(i)
       }    

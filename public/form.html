@@ -1,0 +1,15 @@
+        <div class="flightChoice">
+            <div>
+                <span class="main-title">FlyChoice</span>
+                <br>
+                <span class="sub-title">Choose a Place. Choices Abound.</span>
+            </div>
+            <form ng-submit="submit()" novalidate>
+                <input class="input airports" id="originAirport" type="search" ng-model="origin" name="origin" title="origin" placeholder="Taking Off From..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Taking Off From...'" validation-min-length="{value:3}" ng-focus='hideThis = 1'/>
+                <input class="input airports" id="destinationAirport" type="search" ng-model="destination" name="destination" placeholder="Landing In..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Landing In...'" validation-min-length="{value:3}" />
+                <input class="input dates" placeholder="Leaving..." id="departure" type="search" ng-model="departuredate" validation-min-length="{value:10}" validation-max-length="{value:10}" />
+                <input class="input dates" id="return" placeholder="Returning..." type="search" ng-model="returndate" validation-min-length="{value:10}" validation-max-length="{value:10}" />
+                <button class="search">Search</button>
+            </form>
+            <span class="sub-title" ng-hide="hideThis" ng-cloak>{{errorMsg}}</span>
+        </div>

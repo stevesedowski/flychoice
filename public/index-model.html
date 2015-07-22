@@ -49,68 +49,8 @@
                         <th>Flight #</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div ng-repeat="f in informationAboutFlights">
-                <div>
-                    <div ng-if="f && f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length === 2">
-                        <!-- <div ng-if="myData" ui-grid="{ data: myData }" class="myGrid"></div> -->
-                        <br>
-                        <br> {{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.Amount}} {{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.CurrencyCode}}
-                        <br>Departure: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity }}
-                        <br>Departure Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime}}
-                        <br>Arrival Airport: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity }}
-                        <br>Arrival Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ArrivalDateTime}}
-                        <br>Travel Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].ElapsedTime}}
-
-						<br>Marketing Airline: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].MarketingAirline.Code | airlineCompanyNameFilter }} <!-- | {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].MarketingAirline.Code | airlineCompanyNameFilter }} -->
-
-                        <br>Flight Number: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].FlightNumber}} | {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].FlightNumber}}
-                        <br> One Stop
-                        <br>
-                        <br> Second Segment:
-
-                        <br>Departure: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].DepartureAirport.LocationCode | airportCodeToCity }}
-                        <br>Departure Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].DepartureDateTime}}
-                        <br>Arrival: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].ArrivalAirport.LocationCode | airportCodeToCity }}
-                        <br>Arrival Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[1].ArrivalDateTime}}
-                        <br>Travel Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].ElapsedTime}}
-
-
-                        <br><b>Returning:</b>
-                        <br>Flight Number: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].FlightNumber}} | {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].FlightNumber}}
-                        <br>Return Departure Airport: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity}}, {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCountry}}
-                        <br>Return Date Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureDateTime}}
-                        <br>Connecting Flight Airport: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalAirport.LocationCode | airportCodeToCity }}
-                        <br>Arrival Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ArrivalDateTime}}
-                        <br>Return Travel Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].ElapsedTime}}
-                        <br>Marketing Airline Returning: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].MarketingAirline.Code | airlineCompanyNameFilter }}
-                        <br>
-                        <br>Second Leg:
-                        <br>Return Departure Airport: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].DepartureAirport.LocationCode | airportCodeToCity }}
-                        <br>Return Date Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].DepartureDateTime}}
-                        <br>Landing Flight Airport: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].ArrivalAirport.LocationCode | airportCodeToCity }}
-                        <br>Arrival Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].ArrivalDateTime}}
-                        <br>Return Travel Time: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].ElapsedTime}}
-                        <!-- Some have no on-time performance information -->
-                        <br>
-                        <br>On Time Performance: {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[1].OnTimePerformance.Level | onTimePerformanceFilter }}
-                        <!-- <br>Seats Remaining: {{f.AirItineraryPricingInfo.FareInfos.FareInfo[1].TPA_Extensions.SeatsRemaining.Number}} -->
-
-                    </div>
-                    <!-- <div ng-if="f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length === 1"> -->
-                    <tr ng-if="f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length === 1">>
+                <tbody ng-repeat="f in informationAboutFlights">>
+                    <tr ng-if="f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length === 1">
                         <td>{{f.AirItineraryPricingInfo.ItinTotalFare.TotalFare.Amount}}</td>
 
                         <!-- Departure Flight -->
@@ -130,16 +70,9 @@
                         <td>{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].ElapsedTime}}</td>
                         <td>{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].OnTimePerformance.Level | onTimePerformanceFilter }}</td>
                         <td>{{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].FlightNumber}}</td>
-                        
                     </tr>
-
-                    <!-- </div> -->
-
-                    <div>How many flight segments?--> {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length}}</div>
-                    <hr>
-                </div>
-            </div>
-
+                </tbody>
+            </table>
         </div>
 
 
