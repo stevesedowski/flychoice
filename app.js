@@ -6,9 +6,12 @@ var mongojs = require('mongojs');
 var db = mongojs('themes', ['themes']);
 var SabreDev = require('sabre-dev-studio');
 var sabre_dev_studio_flight = new SabreDev({
-  client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
-  client_secret: 'FVxf52iE',
-  uri: 'https://api.test.sabre.com'
+  // client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
+  //client_secret: 'FVxf52iE',
+  //uri: 'https://api.test.sabre.com'
+  client_id: 'V1:141414:3YAB:AA',
+  client_secret: 'dev2015',
+  uri: 'https://api.sabre.com'
 });
 
 var path = require('path');
@@ -623,7 +626,6 @@ console.log("inside the API call function...........")
         } else {
             data = JSON.parse(data)
             finalResponse.push(data);
-            console.log("data: " + data);
             res.json(finalResponse);
         }
     }

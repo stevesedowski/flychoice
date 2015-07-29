@@ -251,3 +251,85 @@ th {
   height: 20px;
   width: 80%;
 }
+/*REMEMBER: THE ORDER IN WHICH THE DIVS ARE PLACED IS VERY IMPORTANT! The DIVS
+  Have to be placed in a wrapping order so that the layout is correct*/
+.tile-price {
+  float:left;
+  padding-left: 2px;
+  padding-right: 2px;
+  /*display:inline;*/
+  border: 1px solid black;
+  font-size:1.2em;
+}
+
+.tile-leaving {
+  float:right;
+  width:66%;
+  border: 1px solid black;
+  clear:none;
+}
+
+.tile-depart {
+  float:right;
+  width:66%;
+  border: 1px solid black;
+}
+
+.tile-landing {
+  float:right;
+  width: 66%;
+  clear:none;
+  border: 1px solid black;
+}
+
+.tile-return {
+  float:right;
+  width: 66%;
+  border: 1px solid black;
+}
+
+.tile-return-depart {
+  float:right;
+  width: 66%;
+  border: 1px solid black;
+}
+
+.tile-return-landing {
+  float:right;
+  width: 66%;
+  border: 1px solid black;
+}
+
+.tile-airline {
+  float:left;
+  width:25%;
+  clear:left;
+  padding: 0px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.tile-stops {
+  float:left;
+  width:25%;
+  clear:left;
+  display: inline;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.tile-container {
+  border: 1px solid black;
+  width:317px;
+  height:110px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.tile-sm {
+  font-size: .7em;
+}
+
+
+
+

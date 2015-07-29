@@ -40,6 +40,7 @@
 			}
 			$scope.limit = 5;
 			$scope.activateScrolling = 0;
+			console.log("InstaFlight data: " + $scope.informationAboutFlights)
 
 			var numberOfClicks = parseInt(totalFlightsReturned/$scope.limit);
 			console.log("number of clicks: " + numberOfClicks)
@@ -255,6 +256,7 @@ console.log(" submit dpart: " + flightInfo.departuredate + " submit origin: " + 
   			
 			var travelHours = 0;
 			var travellMins = 0;
+			console.log("Travel Time Info: " + travelTimeInfo)
 			travelHours = travelTimeInfo/60;
 			travelMins = travelTimeInfo % 60;
 			return parseInt(travelHours) + "h " + travelMins + "m"; 

@@ -103,7 +103,7 @@
                         </td>
                         <!-- Return Flight -->
                         <td class="flight-info-cells" ng-class-odd="'odd'" ng-class-even="'even'" id="header-trip-width">
-                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment[0].DepartureDateTime | date: 'shortTime'}} Leave {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity }}
+                            {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureDateTime | date: 'shortTime'}} Leave {{f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[1].FlightSegment[0].DepartureAirport.LocationCode | airportCodeToCity }}
 
                             <br> 
 
@@ -161,3 +161,25 @@
                 <div id="spacer"></div>
             </div>
         </div>
+
+<!-- <div class="tile-container">
+    <div class="tile-price">$3,000.00</div>
+    <div class="tile-leaving">
+        <span class="tile-sm">Leaving</span>
+        <br>
+        11:00am Chicago->
+        <br>
+        12:30pm Las Vegas
+        <br>
+        <span class="tile-sm">Returning</span>
+        <br>
+        11:00am Chicago->
+        <br>
+        12:30pm Las Vegas
+    </div>
+    <div class="tile-airline">American Airlines</div>
+    <div class="tile-stops">Nonstop</div>
+
+</div> -->
+
+
