@@ -1,18 +1,23 @@
 "use strict";
-
+// var mongo_uri = process.env.MONGOLAB_URI || "";
+var mongo_uri = process.env.MONGOLAB_URI || "mongodb://localhost/themes";
+console.log("uri: " + mongo_uri)
 var express = require('express');
 var mongojs = require('mongojs');
+var mongodb = require('mongodb');
 // create object of mongojs type, with the database name of: "themes", and collection name of "themes"
-var db = mongojs('themes', ['themes']);
-var SabreDev = require('sabre-dev-studio');
-var sabre_dev_studio_flight = new SabreDev({
-  // client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
-  //client_secret: 'FVxf52iE',
-  //uri: 'https://api.test.sabre.com'
-  client_id: 'V1:141414:3YAB:AA',
-  client_secret: 'dev2015',
-  uri: 'https://api.sabre.com'
-});
+// var db = mongojs('themes', ['themes']);
+var db = mongojs(mongo_uri, ['themes']);
+
+// var SabreDev = require('sabre-dev-studio');
+// var sabre_dev_studio_flight = new SabreDev({
+//   client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
+//   client_secret: 'FVxf52iE',
+//   uri: 'https://api.test.sabre.com'
+//   client_id: 'V1:141414:3YAB:AA',
+//   client_secret: 'dev2015',
+//   uri: 'https://api.sabre.com'
+// });
 
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -296,7 +301,9 @@ app.get('/cities', function (req, res) {
 var express = require('express');
 var mongojs = require('mongojs');
 // create object of mongojs type, with the database name of: "themes", and collection name of "themes"
-var db = mongojs('themes', ['themes']);
+// var db = mongojs('themes', ['themes']);
+var db = mongojs(mongo_uri, ['themes']);
+
 var SabreDev = require('sabre-dev-studio');
 var sabre_dev_studio_flight = new SabreDev({
   client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
@@ -691,6 +698,8 @@ console.log("inside the API call function...........")
   //       sabre_dev_studio_flight.get('/v1/shop/flights/fares?origin=' + origin + '&theme=' + returnedTheme.theme + '&departuredate=' + departuredate + '&returndate=' + returndate, options, destinationCall);
   //     }
   //   })
+  
+
 
   db.themes.find({airport: destination}, {'theme': 1}, function(err, docs){
     console.log('docs length: ' + docs.length)
