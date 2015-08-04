@@ -1,7 +1,7 @@
 "use strict";
 // var mongo_uri = process.env.MONGOLAB_URI || "";
 var mongo_uri = process.env.MONGOLAB_URI || "mongodb://localhost/themes";
-console.log("uri: " + mongo_uri)
+console.log("ConnectionInfo: " + mongo_uri)
 var express = require('express');
 var mongojs = require('mongojs');
 var mongodb = require('mongodb');
