@@ -1,5 +1,18 @@
 "use strict";
 // var mongo_uri = process.env.MONGOLAB_URI || "";
+//check for an environment variable; if it exists, I am running on Heroku; if not, I am running on my local machine.
+//the dump and restore is a way to synchronize my data
+// 1. mongodump  --db themes --collection themes
+//the dump folder is created. go inside this folder. Need to run the mongo restore command from this folder.Run the following code. 
+//once I do the mongo dump, delete the dump folder to make sure next time is fresh data. 
+//2. mongorestore -h ds029803.mongolab.com:29803 -d heroku_5fx5j4qj -u heroku_5fx5j4qj -p s5e7bubhf8nbfm28798itk76po themes
+// -h is the host name and the port; where the mongolab is running; -u is username; -p password; themes is the folder where I did the dump
+// -d is the database, mongolab provides; -u is found in the mongolab uri:
+// MONGOLAB_URI: mongodb://heroku_5fx5j4qj:s5e7bubhf8nbfm28798itk76po@ds029803.mongolab.com:29803/heroku_5fx5j4qj
+// MONGOLAB_URI: mongodb://
+//-u: heroku_5fx5j4qj
+//-p: s5e7bubhf8nbfm28798itk76po@ds
+
 var mongo_uri = process.env.MONGOLAB_URI || "mongodb://localhost/themes";
 console.log("ConnectionInfo: " + mongo_uri)
 var express = require('express');
@@ -9,6 +22,12 @@ var mongodb = require('mongodb');
 // var db = mongojs('themes', ['themes']);
 var db = mongojs(mongo_uri, ['themes']);
 
+var SabreDev = require('sabre-dev-studio');
+var sabre_dev_studio_flight = new SabreDev({
+  client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
+  client_secret: 'FVxf52iE',
+  uri: 'https://api.test.sabre.com'
+});
 // var SabreDev = require('sabre-dev-studio');
 // var sabre_dev_studio_flight = new SabreDev({
 //   client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
@@ -296,56 +315,56 @@ app.get('/cities', function (req, res) {
 // MAIN PAGE API Call----------------------------------------------------------->>>
 // User subits flight information: Origin, Destination, Departure Date, Return Date
 
-"use strict";
+// "use strict";
 
-var express = require('express');
-var mongojs = require('mongojs');
+// var express = require('express');
+// var mongojs = require('mongojs');
 // create object of mongojs type, with the database name of: "themes", and collection name of "themes"
 // var db = mongojs('themes', ['themes']);
-var db = mongojs(mongo_uri, ['themes']);
+// var db = mongojs(mongo_uri, ['themes']);
 
-var SabreDev = require('sabre-dev-studio');
-var sabre_dev_studio_flight = new SabreDev({
-  client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
-  client_secret: 'FVxf52iE',
-  uri: 'https://api.test.sabre.com'
-});
+// var SabreDev = require('sabre-dev-studio');
+// var sabre_dev_studio_flight = new SabreDev({
+//   client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
+//   client_secret: 'FVxf52iE',
+//   uri: 'https://api.test.sabre.com'
+// });
 
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+// var path = require('path');
+// var favicon = require('serve-favicon');
+// var logger = require('morgan');
+// var cookieParser = require('cookie-parser');
+// var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+// var routes = require('./routes/index');
+// var users = require('./routes/users');
 
-var app = express();
+// var app = express();
 //add in handlebars
-var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
-app.engine('handlebars', handlebars.engine);
+// var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
+// app.engine('handlebars', handlebars.engine);
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'jade');
-app.set('view engine', 'handlebars');
+// app.set('view engine', 'handlebars');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(logger('dev'));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended: false}));
+// app.use(cookieParser());
+// app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use('/', routes);
-app.use('/users', users);
+// app.use('/users', users);
 
 //Get Home Page
-app.get('/', function (req, res) {
-  res.status = ('200');
-  res.render('index');
-});
+// app.get('/', function (req, res) {
+//   res.status = ('200');
+//   res.render('index');
+// });
 // get API information
 
 // get Theme API Information
