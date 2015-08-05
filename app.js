@@ -2,6 +2,7 @@
 // var mongo_uri = process.env.MONGOLAB_URI || "";
 //check for an environment variable; if it exists, I am running on Heroku; if not, I am running on my local machine.
 //the dump and restore is a way to synchronize my data
+// I have to do this from the terminal.
 // 1. mongodump  --db themes --collection themes
 //the dump folder is created. go inside this folder. Need to run the mongo restore command from this folder.Run the following code. 
 //once I do the mongo dump, delete the dump folder to make sure next time is fresh data. 
@@ -12,7 +13,29 @@
 // MONGOLAB_URI: mongodb://
 //-u: heroku_5fx5j4qj
 //-p: s5e7bubhf8nbfm28798itk76po@ds
+//from here, go back to the mongolab page. --> https://www.mongolab.com/databases/heroku_5fx5j4qj#tools
+// view the collections tab. The database should be viewable now on the collections tab. 
 
+//so to recap, first login to Heroku: 
+// heroku auth:login
+// then push everything to git:
+// git add -A
+// git commit -m " more info committed ..."
+// git status
+// git push heroku master
+//Then, check to see if a collection is in your mongolab's collection tab.
+//get a mongolab UR. then create a variable: var mongo_uri = process.env.MONGOLAB_URI || "mongodb://localhost/themes";
+//then create the db object by doing the following: 
+// var db = mongojs(mongo_uri, ['themes']);
+//That's it for the node.js side. Now, go to the terminal.
+// Here, you create a dump of the database. You go to the folder that contains the mongoDB. Then you issue the following command:
+// mongodump  --db themes --collection themes
+// Here, "themes" is the database used in this application. Change the name to your database name and collection name.
+// Next, use this page for reference: https://www.mongolab.com/databases/heroku_5fx5j4qj#tools ( binary and IMPORT DATABASE )
+// mongorestore -h ds029803.mongolab.com:29803 -d heroku_5fx5j4qj -u <user> -p <password> <input db directory>
+// This is my code that worked:
+// mongorestore -h ds029803.mongolab.com:29803 -d heroku_5fx5j4qj -u heroku_5fx5j4qj -p s5e7bubhf8nbfm28798itk76po themes
+// the different paramters are available by running the "heroku config" command. 
 var mongo_uri = process.env.MONGOLAB_URI || "mongodb://localhost/themes";
 console.log("ConnectionInfo: " + mongo_uri)
 var express = require('express');
