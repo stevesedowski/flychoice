@@ -42,7 +42,7 @@
                         <th class="cell-headers" id="header-perform-width">On Time Performance</th>
                     </tr>
                 </thead>
-                <   tbody ng-repeat="f in informationAboutFlights | limitTo: limit">
+                <tbody ng-repeat="f in informationAboutFlights | limitTo: limit">
                     <tr ng-if="f && f.AirItinerary.OriginDestinationOptions.OriginDestinationOption[0].FlightSegment.length === 2" style="padding-bottom: 20px;">
 
                         <td class="flight-info-cells price" ng-class-odd="'odd'" ng-class-even="'even'" id="header-price-width">
@@ -155,8 +155,8 @@
             </tr>
         </div>
 
-        <div ng-show="choiceFlights" class="results-main-title center-info">Your Trip Choices</div>
-        <div class="center-info choice-results" ng-repeat='choice in choiceFlights'>
+        <div ng-show="choiceFlights" class="results-main-title center-info">Your Trip Choicesdfdf</div>
+<!--         <div class="center-info choice-results" ng-repeat='choice in choiceFlights'>
             <div ng-if="choice[0].LowestFare > 0">
                 <span ng-model="collapsed" ng-click="collapsed=!collapsed">
                     <div class="choice-div-size choice-results-hover" ng-class-odd="'odd'" ng-class-even="'even'">
@@ -175,4 +175,6 @@
                 </span>
                 <div id="spacer"></div>
             </div>
-        </div>
+        </div> -->
+        <hr>
+        <div your-other-choices></div>

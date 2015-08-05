@@ -7,11 +7,6 @@
 		$scope.val = "true";
 		$scope.hideThis = 1;
 
-		// $scope.origin = "lax";
-		// $scope.destination = "ord";
-		// $scope.departuredate = "2015-08-01";
-		// $scope.returndate = "2015-08-12";
-
 		var onSuccessFlights = function(data){
 
 			var themeArray = [];
@@ -45,10 +40,7 @@
 			var numberOfClicks = parseInt(totalFlightsReturned/$scope.limit);
 			console.log("number of clicks: " + numberOfClicks)
 			var clickCount = 0;
-			// console.log("activateScrolling: outside--> " + $scope.activateScrolling)
-			// console.log("returned flights: " + totalFlightsReturned)
 			if(totalFlightsReturned > 0 && numberOfClicks > 0){
-				// console.log("total: " + $scope.activateScrolling)
 				$scope.activateScrolling = 1;
 			}
 			$scope.loadMore = function() {
@@ -56,7 +48,6 @@
 				if(clickCount == numberOfClicks-1){
 					$scope.activateScrolling = 0;
 				}
-				// console.log("activateScrolling: inside loadMore function: " + $scope.activateScrolling)
 				if($scope.limit >= totalFlightsReturned){
 					$scope.activateScrolling = 0;
 				} else {
@@ -70,13 +61,6 @@
 			$timeout(function() {
 				$anchorScroll('scroll-to');
 			});
-			// $location.path('#/choices').replace();
-			// $scope.$apply()
-			// window.location.href = 'http://localhost:3000/choices.html';
-
-			// console.log("choices: " + themeArray.length)
-			// console.log("theme array: " + themeArray[0]);
-			// console.log($scope.choiceFlights);
 		};
 
 		var onErrorFlights = function(error) {
@@ -105,9 +89,6 @@
 		var onErrorTheme = function(error) {
 			$scope.error = error;
 		}
-
-		 // apiCall.getCityInfo().then(onSuccess, onError);
-		 // apiCall.getThemeInfo().then(onSuccessTheme, onErrorTheme);
 		
 		// form Data collected here ------------------------------------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		
@@ -117,11 +98,6 @@
 			$scope.val = 'false'
 			$scope.myData = 0;
 			$scope.choiceFlights = 0;
-			// $location.absUrl() == 'http://localhost:3000/choices.html'
-			
-			// window.location.href = "http://" + window.location.hostname + "choices.html"
-			
-			// $location.replace();
 
 			// collect input form informaiton into an object
 			var origin = $('#originAirport');
@@ -163,11 +139,6 @@ console.log(" submit dpart: " + flightInfo.departuredate + " submit origin: " + 
 		$scope.getAirportCityInfo = function(airportCode){
 			console.log("airport code: " + airportCode)
 			apiCall.getAirportCity(airportCode).then(onSuccessAirportCode, onErrorAirportCode);
-			// apiCall.getThemeInfo().then(onSuccessTheme,onErrorTheme);
-			// $http.post('/airport_code', {airport_code: airportCode})
-			// 	.then(function(response){
-			// 		return response.data;
-			// 	})
 		}
 
 	});
@@ -310,6 +281,45 @@ console.log(" submit dpart: " + flightInfo.departuredate + " submit origin: " + 
 			       return "Poor";
 			}
   		};
+	});
+
+// DIRECTIVES
+	// angular.module.('app').directive('yourOtherChoices', function() {
+	// 	return {
+	// 		template:        
+	// 			'<div class="center-info choice-results" ng-repeat="choice in choiceFlights">
+	//             <div ng-if="choice[0].LowestFare > 0">
+	//                 <span ng-model="collapsed" ng-click="collapsed=!collapsed">
+	//                     <div class="choice-div-size choice-results-hover" ng-class-odd=""odd"" ng-class-even=""even"">
+	                        
+	//                         Choose from {{ choice.length }} <span class="theme-font">{{ choice[0].Theme | capitalize:true}}</span> destinations starting at 
+	//                         <span class="choice-prices">{{ choice[0].LowestFare | currency }}!</span>
+	//                         <div id="spacer-more"></div>
+	//                             <div ng-show="collapsed" ng-repeat="c in choice" class="smallerBar">
+
+	//                                 <div ng-if="c.LowestFare != null" ng-class-odd=""odd"" ng-class-even=""even"" class="choice-themes">
+	//                                     Fly from {{ flyingFrom | airportCodeToCity }} to {{  c.DestinationLocation | airportCodeToCity }} for <span class="fRight">{{c.LowestFare | currency}} </span>
+	//                                 </div>
+	//                             </div>
+	//                         <div id="spacer-more"></div>
+	//                     </div>
+	//                 </span>
+	//                 <div id="spacer"></div>
+	//             </div>
+	//         </div>'
+	// 	};
+	// });
+
+// angular.module('app').directive('yourOtherChoices', function () {
+//     return {
+//         template: '<div class="center-info choice-results" ng-repeat="choice in choiceFlights"><div ng-if="choice[0].LowestFare > 0"><span ng-model="collapsed" ng-click="collapsed=!collapsed"><div class="choice-div-size choice-results-hover" ng-class-odd=""odd"" ng-class-even=""even"">Choose from {{ choice.length }} <span class="theme-font">{{ choice[0].Theme | capitalize:true}}</span> destinations starting at <span class="choice-prices">{{ choice[0].LowestFare | currency }}!</span><div id="spacer-more"></div><div ng-show="collapsed" ng-repeat="c in choice" class="smallerBar"><div ng-if="c.LowestFare != null" ng-class-odd=""odd"" ng-class-even=""even"" class="choice-themes">Fly from {{ flyingFrom | airportCodeToCity }} to {{  c.DestinationLocation | airportCodeToCity }} for <span class="fRight">{{c.LowestFare | currency}} </span></div></div><div id="spacer-more"></div></div></span><div id="spacer"></div></div></div>'
+//     };
+// });
+
+	angular.module('app').directive('yourOtherChoices', function () {
+	    return {
+	        template: '<div class="center-info choice-results" ng-repeat="choice in choiceFlights"><div ng-if="choice[0].LowestFare > 0"><span ng-model="collapsed" ng-click="collapsed=!collapsed"><div class="choice-div-size choice-results-hover" ng-class-odd=""odd"" ng-class-even=""even"">Choose from {{ choice.length }} <span class="theme-font">{{ choice[0].Theme | capitalize:true}}</span> destinations starting at <span class="choice-prices">{{ choice[0].LowestFare | currency }}!</span><div id="spacer-more"></div><div ng-show="collapsed" ng-repeat="c in choice" class="smallerBar"><div ng-if="c.LowestFare != null" ng-class-odd=""odd"" ng-class-even=""even"" class="choice-themes">Fly from {{ flyingFrom | airportCodeToCity }} to {{  c.DestinationLocation | airportCodeToCity }} for <span class="fRight">{{c.LowestFare | currency}} </span></div></div><div id="spacer-more"></div></div></span><div id="spacer"></div></div></div>'
+	    };
 	});
 	
 })();
