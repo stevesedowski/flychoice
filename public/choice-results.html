@@ -13,7 +13,12 @@
         </div>
         <div ng-if="myData">
     
-            <div class="results-main-title center-info">Your Chosen Trip</div>
+            <div class="center-info">
+                <span class="results-main-title">Your Chosen Trip</span>
+            
+         <!--        <span class="sub-title">Below are destinations that resonate well with {{ destination.toUpperCase() | airportCodeToCity }}.</span> -->
+            </div>
+
             <table border="0" class="returnedFlights" align="center">
                 <thead>
                     <tr>
@@ -140,7 +145,11 @@
             </tr>
         </div>
 
-        <div ng-show="choiceFlights" class="results-main-title center-info">Your Trip Choices</div>
+        <div ng-show="choiceFlights" class="center-info">
+            <span class="results-main-title">Your Chosen Trip</span>
+            <br>
+            <span class="sub-title">You chose to fly to {{ destination.toUpperCase() | airportCodeToCity }}. Here are destinations that share remarkable characteristics.</span>
+        </div>
 
         <div your-other-choices></div>
 <!-- <div class="tile-container">
