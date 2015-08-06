@@ -145,11 +145,13 @@
             </tr>
         </div>
 
-        <div ng-show="choiceFlights" class="center-info">
-            <span class="results-main-title">Your Chosen Trip</span>
+        <div ng-if="myData" ng-show="choiceFlights" class="center-info">
+            <span class="results-main-title">Your Trip Choices</span>
             <br>
             <span class="sub-title">You chose to fly to {{ destination.toUpperCase() | airportCodeToCity }}. Here are destinations that share remarkable characteristics.</span>
         </div>
+
+        <!-- <span class="sub-title center-info" ng-hide="fireFoxHide" ng-cloak>{{fireFoxErrorMsg}}</span> -->
 
         <div your-other-choices></div>
 <!-- <div class="tile-container">

@@ -61,10 +61,36 @@
 			$timeout(function() {
 				$anchorScroll('scroll-to');
 			});
+
+			// Below is a fix for a FireFox bug. The nature of the bug was that the "errorMsg" was not displayed in a Firefox, i.e. Mozilla,
+			// browser when there were no flights found. For some reason, Chrome, IE, Safari all recognized the "errorMsg" and most importantly, 
+			// in all of these browswers, the "onErrorFlights" function was triggered. However, in Firefox, the "onErrorFlights" function 
+			// was not triggered. Rather, the "onSuccessFlights" function was triggered when there were no flights found. Why? Not sure. 
+			// But the code below fixes the problem.
+			if( navigator.appCodeName == 'Mozilla' && $scope.informationAboutFlights == undefined ){
+				$scope.myData = 0;
+				$scope.errorMsg = "Sorry, no flights were found. Try a different search criteria. Thanks!";
+				$scope.origin = '';
+				$scope.destination = '';
+				$scope.departuredate = '';
+				$scope.returndate = '';
+				$scope.val = 'true';
+				$scope.hideThis = 0;
+			} else if ( navigator.appCodeName == 'Mozilla' && isNaN(numberOfClicks) ) {
+				$scope.myData = 0;
+				$scope.errorMsg = "Sorry, no flights were found. Try a different search criteria. Thanks!";
+				$scope.origin = '';
+				$scope.destination = '';
+				$scope.departuredate = '';
+				$scope.returndate = '';
+				$scope.val = 'true';
+				$scope.hideThis = 0;
+			}
 		};
 
 		var onErrorFlights = function(error) {
 			$scope.error = error;
+			$scope.myData = 0;
 			$scope.errorMsg = "Sorry, no flights were found. Try a different search criteria. Thanks!";
 			$scope.origin = '';
 			$scope.destination = '';
