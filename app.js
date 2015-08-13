@@ -47,8 +47,8 @@ var db = mongojs(mongo_uri, ['themes']);
 
 var SabreDev = require('sabre-dev-studio');
 var sabre_dev_studio_flight = new SabreDev({
-  client_id: 'V1:rf5z8cicozn8brnz:DEVCENTER:EXT',
-  client_secret: 'FVxf52iE',
+  client_id: 'V#:############:DEVCENTER:EXT',
+  client_secret: '##########',
   uri: 'https://api.test.sabre.com'
 });
 
